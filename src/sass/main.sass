@@ -1,0 +1,104 @@
+@charset "utf-8"
+@import _mixin
+
+// reset style
+*
+  -webkit-backface-visibility: hidden
+img
+  border: 0
+  vertical-align: bottom
+a,
+a:visited,
+a:hover,
+a:focus,
+a:active
+  text-decoration: none
+*:focus,
+*:active
+  outline: 0
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  line-height: inherit
+  font-weight: normal
+p
+  line-height: inherit
+label
+  font-weight: inherit
+input,
+button,
+textarea,
+select,
+optgroup,
+option
+  font-family: inherit
+  font-size: inherit
+  *font-size: 100%
+  font-style: inherit
+  font-weight: inherit
+  outline: 0
+textarea
+  resize: vertical
+ol,
+ul,
+li
+  margin: 0
+  padding: 0
+  list-style: none
+section,
+article,
+aside,
+footer,
+header,
+nav,
+main
+  display:block
+
+html
+  font-size: 16px
+body
+  line-height: 1.5
+  font-size: 1rem
+  font-family: sans-serif
+  overflow-x: hidden
+
+// global style: prefix [g-]
+// page
+.g-page-wrapper
+  position: relative
+  padding-top: 204px
+  @include betweenRWD(1281px, 1680px)
+    padding-top: 180px
+  @include betweenRWD(1024px, 1280px)
+    padding-top: 160px
+  @include maxRWD(1023px)
+    padding-top: 68px
+// flex
+.g-flex-wrapper
+  display: flex
+  flex-wrap: wrap
+.g-flex-inline-wrapper
+  display: inline-flex
+  flex-wrap: wrap
+.g-flex-align-start
+  align-items: flex-start
+.g-flex-align-end
+  align-items: flex-end
+.g-flex-align-center
+  align-items: center
+.g-flex-align-stretch
+  align-items: stretch
+.g-flex-justify-start
+  justify-content: flex-start
+.g-flex-justify-end
+  justify-content: flex-end
+.g-flex-justify-center
+  justify-content: center
+.g-flex-justify-space-between
+  justify-content: space-between
+.g-flex-justify-space-around
+  justify-content: space-around
+

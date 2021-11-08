@@ -1,0 +1,162 @@
+.footer
+  .footer-content-wrapper
+    padding: 100px 120px 50px
+    @include betweenRWD(1681px, 1800px)
+      padding: 80px 80px 40px
+    @include betweenRWD(1024px, 1680px)
+      padding: 65px 30px 30px
+    @include maxRWD(1023px)
+      padding: 25px 0 0
+  .footer-content
+    position: relative
+    border-top: 2px solid #e5e5e5
+    padding: 50px 45px 0
+    @include betweenRWD(1681px, 1800px)
+      padding: 40px 30px 0
+    @include betweenRWD(1024px, 1680px)
+      padding: 30px 0 0 20px
+    @include maxRWD(1023px)
+      padding: 20px 0 0 20px
+    .footer-content-logo
+      display: block
+      img
+        display: block
+        width: 150px
+        @include maxRWD(1023px)
+          width: 100px
+    .footer-content-menu
+      width: 770px
+      margin-left: 40px
+      @include betweenRWD(1281px, 1680px)
+        width: 520px
+        margin-left: 20px
+      @include maxRWD(1280px)
+        width: calc(100% + 20px)
+        margin-top: 20px
+        margin-left: -20px
+        padding-right: 20px
+      .footer-content-menu-item
+        min-width: 127px
+        padding: 15px 0 15px 95px
+        @include betweenRWD(1281px, 1680px)
+          min-width: 77px
+          padding-left: 45px
+        @include maxRWD(1280px)
+          min-width: 20%
+          padding: 0 0 15px 30px
+        @include maxRWD(479px)
+          min-width: 33.333%
+          &.space
+            display: none
+        > a
+          font-size: 1rem
+          color: $color-theme
+          text-decoration: underline
+          @include maxRWD(720px)
+            font-size: 0.875rem
+          &:hover
+            color: $color-black-1
+            text-decoration: none
+      .footer-content-menu-break
+        flex-basis: 100%
+        height: 0
+        @include maxRWD(479px)
+          display: none
+    .footer-content-follow
+      margin-left: 150px
+      padding-top: 15px
+      @include betweenRWD(1281px, 1680px)
+        margin-left: 100px
+      @include maxRWD(1280px)
+        position: absolute
+        top: 60px
+        right: 30px
+        margin: 0
+        padding: 0
+      @include maxRWD(1023px)
+        top: 35px
+        right: 20px
+      span
+        font-size: 1rem
+        color: $color-theme
+        padding-right: 10px
+      a
+        display: inline-block
+        width: 30px
+        height: 30px
+        line-height: 30px
+        font-size: 1.25rem
+        color: $color-theme-dark
+        text-align: center
+        margin-left: 8px
+        &:hover
+          color: $color-black-1
+    .footer-content-gotop
+      display: block
+      position: absolute
+      width: 150px
+      height: 75px
+      font-size: 0
+      border: none
+      background: transparent
+      top: 60px
+      right: 0
+      overflow: hidden
+      @include maxRWD(1680px)
+        width: 95px
+        height: 50px
+        top: -60px
+      span
+        display: block
+        position: absolute
+        width: 150px
+        height: 75px
+        right: 0
+        bottom: 0
+        overflow: hidden
+        @include maxRWD(1680px)
+          width: 95px
+          height: 50px
+        &::before
+          content: ''
+          display: block
+          position: absolute
+          width: 100px
+          height: 100px
+          border-top: 2px solid #7a7977
+          border-left: 2px solid #7a7977
+          top: 23px
+          left: 25px
+          transform: rotate(45deg)
+          @include maxRWD(1680px)
+            width: 65px
+            height: 65px
+            top: 15px
+            left: 14px
+        &.ghost
+          position: fixed
+          z-index: 100
+          right: 120px
+          bottom: -80px
+          opacity: 0
+          transition: all 1s
+          @include betweenRWD(1024px, 1680px)
+            right: 30px
+      &.scroll-view
+        span
+          &.ghost
+            bottom: 20px
+            opacity: 1
+  .footer-copyright
+    background: $color-theme
+    padding: 275px 30px 30px
+    p
+      font-size: 1rem
+      color: $color-white
+      text-align: center
+      margin: 0
+        
+
+
+
+

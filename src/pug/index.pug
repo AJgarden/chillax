@@ -1,0 +1,291 @@
+doctype html
+html
+  head
+    title chillax
+    <!-- inject(html) [./meta.html] -->
+  body 
+    div.g-page-wrapper.page-index
+      //- <!-- inject(html) [./header.html] -->
+      header.header
+        div.header-wrapper.g-flex-wrapper.g-flex-align-center.g-flex-justify-space-between
+          h1.header-logo
+            a(href='/' title='chillax')
+              img(src='assets/images/header-logo.png' alt='chillax')
+          nav.header-nav.g-flex-wrapper.g-flex-align-center
+            a.header-nav-item.g-flex-wrapper.g-flex-align-center(href='lesson_list.html' title='線上課程')
+              span.header-nav-item-icon
+                img(src='assets/images/header-icon-lesson.png' alt='')
+              span.header-nav-item-text 線上課程
+            a.header-nav-item.g-flex-wrapper.g-flex-align-center(href='account_login.html' title='會員登入')
+              span.header-nav-item-icon
+                img(src='assets/images/header-icon-member.png' alt='')
+              span.header-nav-item-text 會員登入
+        div.header-scroll-dispatcher
+      div.index-banner
+        div.index-banner-carousel
+          div.index-banner-carousel-item
+            a(href="" title="")
+              img(src="assets/images/del/d-index-banner-01-pc.jpg" alt="")
+          div.index-banner-carousel-item
+            a(href="" title="")
+              img(src="assets/images/del/d-index-banner-02-pc.jpg" alt="")
+          div.index-banner-carousel-item
+            a(href="" title="")
+              img(src="assets/images/del/d-index-banner-03-pc.jpg" alt="")
+      div.index-intro(data-scrollview-enable)
+        h2.index-intro-subject 讓chillax成為日常，一起俏課吧！
+        p.index-intro-desc.g-flex-inline-wrapper.g-flex-align-center.g-flex-justify-center
+          span 精心研選有趣豐富的體驗內容，呈現給喜愛生活的您
+          img(src="assets/images/index-intro-desc-emoji.png" alt="emoji")
+        ul.index-intro-icons.g-flex-wrapper.g-flex-align-center.g-flex-justify-center
+          li.index-intro-icons-item
+            img(src="assets/images/index-intro-icon-1.jpg" alt="精選課程")
+            p(style="--bg-img: url(../images/index-intro-title-1.jpg)") 精選課程
+          li.index-intro-icons-item
+            img(src="assets/images/index-intro-icon-2.jpg" alt="放鬆學習")
+            p(style="--bg-img: url(../images/index-intro-title-2.jpg)") 放鬆學習
+          li.index-intro-icons-item
+            img(src="assets/images/index-intro-icon-3.jpg" alt="品味生活")
+            p(style="--bg-img: url(../images/index-intro-title-3.jpg)") 品味生活
+          li.index-intro-icons-item
+            img(src="assets/images/index-intro-icon-4.jpg" alt="問答交流")
+            p(style="--bg-img: url(../images/index-intro-title-4.jpg)") 問答交流
+        p.index-float-chillax It's time to chillax
+      div.index-classes(data-scrollview-enable)
+        div.index-classes-header
+          h2.index-classes-subject 線上課程
+          p.index-classes-desc.g-flex-inline-wrapper.g-flex-align-center.g-flex-justify-center
+            span 精心研選有趣豐富的體驗內容
+            img(src="assets/images/index-classes-desc-emoji.png" alt="emoji")
+        div.index-classes-option.g-flex-wrapper.g-flex-align-center.g-flex-justify-end
+          a(href="" title="") 查看更多
+        ul.index-classes-list.g-flex-wrapper.g-flex-align-start(data-scrollview-enable)
+          li.index-classes-item
+            a(href="" title="")
+              span.index-classes-item-tag(style="background-color: #e57b47;") 早鳥優惠中
+              div.index-classes-item-img
+                img(src="assets/images/del/d-index-classes-01.jpg" alt="")
+              h3.index-classes-item-title 五星主廚帶你做!! | 不藏私義大利私房菜
+              div.index-classes-item-ranking.g-flex-wrapper.g-flex-align-center
+                span 5.0
+                div.index-classes-item-ranking-stars(data-stars="5")
+                span (3)
+              p.index-classes-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+              div.index-classes-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                div.index-classes-item-lecturer.g-flex-wrapper.g-flex-align-start
+                  div.index-classes-item-lecturer-img
+                    img(src="assets/images/del/d-lecturer-01.jpg" alt="林明健 Kin")
+                  div.index-classes-item-lecturer-info
+                    p.index-classes-item-lecturer-name 林明健 Kin
+                    p.index-classes-item-lecturer-dept LONGTAIL
+                div.index-classes-item-price NT$4,980
+          li.index-classes-item
+            a(href="" title="")
+              span.index-classes-item-tag(style="background-color: #ac6b33;") 優惠組合
+              div.index-classes-item-img
+                img(src="assets/images/del/d-index-classes-02.jpg" alt="")
+              h3.index-classes-item-title 巧克力甜點大全 | 大師帶您進入味蕾世界
+              div.index-classes-item-ranking.g-flex-wrapper.g-flex-align-center
+                span 5.0
+                div.index-classes-item-ranking-stars(data-stars="5")
+                span (3)
+              p.index-classes-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+              div.index-classes-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                div.index-classes-item-lecturer.g-flex-wrapper.g-flex-align-start
+                  div.index-classes-item-lecturer-img
+                    img(src="assets/images/del/d-lecturer-02.jpg" alt="Pia")
+                  div.index-classes-item-lecturer-info
+                    p.index-classes-item-lecturer-name Pia
+                    p.index-classes-item-lecturer-dept 稻町森法式甜點舖
+                div.index-classes-item-price NT$4,280
+          li.index-classes-item
+            a(href="" title="")
+              div.index-classes-item-img
+                img(src="assets/images/del/d-index-classes-03.jpg" alt="")
+              h3.index-classes-item-title 減重口慾不是夢 | 低熱量美食食譜把手教學
+              div.index-classes-item-ranking.g-flex-wrapper.g-flex-align-center
+                span 5.0
+                div.index-classes-item-ranking-stars(data-stars="5")
+                span (3)
+              p.index-classes-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+              div.index-classes-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                div.index-classes-item-lecturer.g-flex-wrapper.g-flex-align-start
+                  div.index-classes-item-lecturer-img
+                    img(src="assets/images/del/d-lecturer-03.jpg" alt="Allen")
+                  div.index-classes-item-lecturer-info
+                    p.index-classes-item-lecturer-name Allen
+                    p.index-classes-item-lecturer-dept Fourplay
+                div.index-classes-item-price NT$4,980
+          li.index-classes-item
+            a(href="" title="")
+              span.index-classes-item-tag(style="background-color: #e57b47;") 早鳥優惠中
+              div.index-classes-item-img
+                img(src="assets/images/del/d-index-classes-01.jpg" alt="")
+              h3.index-classes-item-title 五星主廚帶你做!! | 不藏私義大利私房菜
+              div.index-classes-item-ranking.g-flex-wrapper.g-flex-align-center
+                span 5.0
+                div.index-classes-item-ranking-stars(data-stars="5")
+                span (3)
+              p.index-classes-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+              div.index-classes-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                div.index-classes-item-lecturer.g-flex-wrapper.g-flex-align-start
+                  div.index-classes-item-lecturer-img
+                    img(src="assets/images/del/d-lecturer-01.jpg" alt="林明健 Kin")
+                  div.index-classes-item-lecturer-info
+                    p.index-classes-item-lecturer-name 林明健 Kin
+                    p.index-classes-item-lecturer-dept LONGTAIL
+                div.index-classes-item-price NT$4,980
+          li.index-classes-item
+            a(href="" title="")
+              span.index-classes-item-tag(style="background-color: #ac6b33;") 優惠組合
+              div.index-classes-item-img
+                img(src="assets/images/del/d-index-classes-02.jpg" alt="")
+              h3.index-classes-item-title 巧克力甜點大全 | 大師帶您進入味蕾世界
+              div.index-classes-item-ranking.g-flex-wrapper.g-flex-align-center
+                span 5.0
+                div.index-classes-item-ranking-stars(data-stars="5")
+                span (3)
+              p.index-classes-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+              div.index-classes-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                div.index-classes-item-lecturer.g-flex-wrapper.g-flex-align-start
+                  div.index-classes-item-lecturer-img
+                    img(src="assets/images/del/d-lecturer-02.jpg" alt="Pia")
+                  div.index-classes-item-lecturer-info
+                    p.index-classes-item-lecturer-name Pia
+                    p.index-classes-item-lecturer-dept 稻町森法式甜點舖
+                div.index-classes-item-price NT$4,280
+          li.index-classes-item
+            a(href="" title="")
+              div.index-classes-item-img
+                img(src="assets/images/del/d-index-classes-03.jpg" alt="")
+              h3.index-classes-item-title 減重口慾不是夢 | 低熱量美食食譜把手教學
+              div.index-classes-item-ranking.g-flex-wrapper.g-flex-align-center
+                span 5.0
+                div.index-classes-item-ranking-stars(data-stars="5")
+                span (3)
+              p.index-classes-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+              div.index-classes-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                div.index-classes-item-lecturer.g-flex-wrapper.g-flex-align-start
+                  div.index-classes-item-lecturer-img
+                    img(src="assets/images/del/d-lecturer-03.jpg" alt="Allen")
+                  div.index-classes-item-lecturer-info
+                    p.index-classes-item-lecturer-name Allen
+                    p.index-classes-item-lecturer-dept Fourplay
+                div.index-classes-item-price NT$4,980
+        a.index-classes-more(href="" title="更多課程" data-scrollview-enable) 更多課程
+        p.index-float-relax 放鬆找靈感
+      div.index-extend(data-scrollview-enable)
+        div.index-extend-header
+          h2.index-extend-subject 延伸學習
+          p.index-extend-desc 一同探索更多的生活領域
+        div.index-extend-option.g-flex-wrapper.g-flex-align-center.g-flex-justify-end
+          a(href="" title="") 查看更多
+          button.index-extend-arrow.prev 往前
+          button.index-extend-arrow.next 往後
+        div.index-extend-list-wrapper(data-scrollview-enable)
+          ul.index-extend-list
+            li.index-extend-item
+              div.index-extend-item-img
+                img(src="assets/images/del/d-index-extend-01.jpg" alt="")
+              h3.index-extend-item-title 揭開法式餐廳工作的大小事 feat.安吉阿魯的小甜甜
+              p.index-extend-item-desc 負責的部分是每一季的新菜單規劃及試做，也會有不定時活動或節慶的菜單需要研發~新菜單的測試方式大概是主廚跟我們說這次菜單的概念及想要用甚麼食材料理，再讓甜點部的人員試著做出來，這過程中會不斷與主廚討論與試吃。通常開始到完成的時間不一定，短至3天，長至1個月都有可能，也有主廚試吃完之後說「也許這不是個好主意」的事情發生過。
+              a.index-extend-item-more(href="" title="") 閱讀更多
+            li.index-extend-item
+              div.index-extend-item-img
+                img(src="assets/images/del/d-index-extend-02.jpg" alt="")
+              h3.index-extend-item-title 樂沐陳嵐舒：大自然說的話，由廚師來表達
+              p.index-extend-item-desc 「台灣料理與台灣味是不同的議題」，陳嵐舒說，台灣擁有許多不同省份、不同代表性的料理，什麼能真正代表台灣料理呢？以上都是。而如何定義一個文化的料理？她認為，該是Technique（技巧）、Terroir（風土）、 Taste（味道）三者達到完美的平衡。 至於台灣味，陳嵐舒引用法國主廚Michel Bras的話：「大自然說的話，由廚師來表達。」料理的精髓源自食物真味的追求，「用台灣這片土地，生產食材所做的菜，就是台灣味。」
+              a.index-extend-item-more(href="" title="") 閱讀更多
+            li.index-extend-item
+              div.index-extend-item-img
+                img(src="assets/images/del/d-index-extend-03.jpg" alt="")
+              h3.index-extend-item-title 大師作家們的訪談：做什麼就像什麼！你所投其工作的抉擇、熱忱、決心，以及成為現在的自己
+              p.index-extend-item-desc 作家訪談不是短短幾小時的對談，有時計畫數月甚至數年的貼身採訪，作家們往往能放下一切戒備，自然而然地談論寫作習慣、方法、困惑甚至私人的感情生活。破除對於寫作的一些誤解和迷思，比如他們都不靠靈感、激情、酒精來寫作，而是勤勉且自律，認真嚴謹地看待自己的職業，反覆不斷地修改直到產出一部作品。就算志業不在成為作家，或其他工作領域的人們，都能在訪談當中看到相同的問題，與待解的答案。
+              a.index-extend-item-more(href="" title="") 閱讀更多
+            li.index-extend-item
+              div.index-extend-item-img
+                img(src="assets/images/del/d-index-extend-01.jpg" alt="")
+              h3.index-extend-item-title 揭開法式餐廳工作的大小事 feat.安吉阿魯的小甜甜
+              p.index-extend-item-desc 負責的部分是每一季的新菜單規劃及試做，也會有不定時活動或節慶的菜單需要研發~新菜單的測試方式大概是主廚跟我們說這次菜單的概念及想要用甚麼食材料理，再讓甜點部的人員試著做出來，這過程中會不斷與主廚討論與試吃。通常開始到完成的時間不一定，短至3天，長至1個月都有可能，也有主廚試吃完之後說「也許這不是個好主意」的事情發生過。
+              a.index-extend-item-more(href="" title="") 閱讀更多
+            li.index-extend-item
+              div.index-extend-item-img
+                img(src="assets/images/del/d-index-extend-02.jpg" alt="")
+              h3.index-extend-item-title 樂沐陳嵐舒：大自然說的話，由廚師來表達
+              p.index-extend-item-desc 「台灣料理與台灣味是不同的議題」，陳嵐舒說，台灣擁有許多不同省份、不同代表性的料理，什麼能真正代表台灣料理呢？以上都是。而如何定義一個文化的料理？她認為，該是Technique（技巧）、Terroir（風土）、 Taste（味道）三者達到完美的平衡。 至於台灣味，陳嵐舒引用法國主廚Michel Bras的話：「大自然說的話，由廚師來表達。」料理的精髓源自食物真味的追求，「用台灣這片土地，生產食材所做的菜，就是台灣味。」
+              a.index-extend-item-more(href="" title="") 閱讀更多
+            li.index-extend-item
+              div.index-extend-item-img
+                img(src="assets/images/del/d-index-extend-03.jpg" alt="")
+              h3.index-extend-item-title 大師作家們的訪談：做什麼就像什麼！你所投其工作的抉擇、熱忱、決心，以及成為現在的自己
+              p.index-extend-item-desc 作家訪談不是短短幾小時的對談，有時計畫數月甚至數年的貼身採訪，作家們往往能放下一切戒備，自然而然地談論寫作習慣、方法、困惑甚至私人的感情生活。破除對於寫作的一些誤解和迷思，比如他們都不靠靈感、激情、酒精來寫作，而是勤勉且自律，認真嚴謹地看待自己的職業，反覆不斷地修改直到產出一部作品。就算志業不在成為作家，或其他工作領域的人們，都能在訪談當中看到相同的問題，與待解的答案。
+              a.index-extend-item-more(href="" title="") 閱讀更多
+            li.index-extend-item
+              div.index-extend-item-img
+                img(src="assets/images/del/d-index-extend-01.jpg" alt="")
+              h3.index-extend-item-title 揭開法式餐廳工作的大小事 feat.安吉阿魯的小甜甜
+              p.index-extend-item-desc 負責的部分是每一季的新菜單規劃及試做，也會有不定時活動或節慶的菜單需要研發~新菜單的測試方式大概是主廚跟我們說這次菜單的概念及想要用甚麼食材料理，再讓甜點部的人員試著做出來，這過程中會不斷與主廚討論與試吃。通常開始到完成的時間不一定，短至3天，長至1個月都有可能，也有主廚試吃完之後說「也許這不是個好主意」的事情發生過。
+              a.index-extend-item-more(href="" title="") 閱讀更多
+            li.index-extend-item
+              div.index-extend-item-img
+                img(src="assets/images/del/d-index-extend-02.jpg" alt="")
+              h3.index-extend-item-title 樂沐陳嵐舒：大自然說的話，由廚師來表達
+              p.index-extend-item-desc 「台灣料理與台灣味是不同的議題」，陳嵐舒說，台灣擁有許多不同省份、不同代表性的料理，什麼能真正代表台灣料理呢？以上都是。而如何定義一個文化的料理？她認為，該是Technique（技巧）、Terroir（風土）、 Taste（味道）三者達到完美的平衡。 至於台灣味，陳嵐舒引用法國主廚Michel Bras的話：「大自然說的話，由廚師來表達。」料理的精髓源自食物真味的追求，「用台灣這片土地，生產食材所做的菜，就是台灣味。」
+              a.index-extend-item-more(href="" title="") 閱讀更多
+      div.index-sider
+        div.index-sider-left.g-flex-wrapper.g-flex-align-center
+          span.index-sider-left-follow FOLLOW US
+          span.index-sider-left-line
+          a(href="" title="Facebook")
+            i.fab.fa-facebook-f
+          a(href="" title="Youtube")
+            i.fab.fa-youtube
+          a(href="" title="Instagram")
+            i.fab.fa-instagram
+        div.index-sider-right
+          span.index-sider-right-line
+          span.index-sider-right-text 今天想上甚麼課？
+          a.index-sider-right-link(href="" title="線上課程") 線上課程
+      //- <!-- inject(html) [./footer.html] -->
+      footer.footer
+        div.footer-content-wrapper
+          div.footer-content.g-flex-wrapper.g-flex-align-start
+            a.footer-content-logo(href="/")
+              img(src="assets/images/header-logo.png" alt="")
+            div.footer-content-menu.g-flex-wrapper.g-flex-align-start
+              div.footer-content-menu-item
+                a(href="/" title="首頁") 首頁
+              div.footer-content-menu-item
+                a(href="/" title="最新消息") 最新消息
+              div.footer-content-menu-item
+                a(href="/" title="線上課程") 線上課程
+              div.footer-content-menu-item
+                a(href="/" title="會員專區") 會員專區
+              div.footer-content-menu-item
+                a(href="/" title="關於我們") 關於我們
+              div.footer-content-menu-break
+              div.footer-content-menu-item.space
+              div.footer-content-menu-item
+                a(href="/" title="合作夥伴") 合作夥伴
+              div.footer-content-menu-item
+                a(href="/" title="版權宣告") 版權宣告
+              div.footer-content-menu-item
+                a(href="/" title="常見問題") 常見問題
+              div.footer-content-menu-item
+                a(href="/" title="客服專區") 客服專區
+            div.footer-content-follow.g-flex-inline-wrapper.g-flex-align-start
+              span Follow Us
+              a(href="" title="Facebook")
+                i.fab.fa-facebook-f
+              a(href="" title="Youtube")
+                i.fab.fa-youtube
+              a(href="" title="Instagram")
+                i.fab.fa-instagram
+            button.footer-content-gotop
+              span 返回置頂
+              span.ghost
+        div.footer-copyright
+          p &copy; 2021 卡麥拉影像文創有限公司 ALL RIGHTS RESERVED.
+    <!-- inject(html) [./script.html] -->
+    script(src="assets/js/flickity.pkgd.min.js")
+    script(src="assets/js/index.min.js")
