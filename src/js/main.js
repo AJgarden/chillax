@@ -44,9 +44,12 @@ goTop.scrollView({
 const cookies = document.cookie.split(';')
 if (!cookies.some((cookie) => cookie.includes('demo_validation='))) {
   $('body').append(
-    '<div style="position: fixed; z-index: 9999; width: 100%; height: 100%; background: #ffffff; top: 0; left: 0;"><input id="demo-validation-input" placeholder="請輸入demo驗證碼" style="display: block; width: 240px; height: 40px; border: 1px solid #333333; background: #ffffff; border-radius: 4px; text-align: center; position: absolute; top: 50%; left: 50%; margin: -20px 0 0 -120px;" /></div>'
+    '<div id="demo-validation-box" style="position: fixed; z-index: 9999; width: 100%; height: 100%; background: #ffffff; top: 0; left: 0;"><input id="demo-validation-input" placeholder="請輸入demo驗證碼" style="display: block; width: 240px; height: 40px; border: 1px solid #333333; background: #ffffff; border-radius: 4px; text-align: center; position: absolute; top: 50%; left: 50%; margin: -20px 0 0 -120px;" /></div>'
   )
-  $(document).on('change', '#demo-validation-input', function (event) {
-    console.log(event)
+  $(document).on('keyup', '#demo-validation-input', function (event) {
+    if (event.currentTarget.value === '1234') {
+      $('#demo-validation-box').remove()
+      document.cookie = `demo_validation=true; max-age=86400`
+    }
   })
 }

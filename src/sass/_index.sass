@@ -64,7 +64,7 @@
   @include betweenRWD(1024px, 1680px)
     padding: 60px
   @include maxRWD(1023px)
-    padding: 50px 0
+    padding: 50px 0 80px
   .index-intro-subject
     line-height: 50px
     font-size: 2.125rem
@@ -142,8 +142,17 @@
     margin: 0
     padding-top: 30px
     transition: transform 2s ease-out
-    @include betweenRWD(1280px, 1680px)
-      bottom: -160px
+    @include betweenRWD(1024px, 1680px)
+      bottom: -200px
+    @include maxRWD(1023px)
+      width: 300px
+      height: 100px
+      line-height: 50px
+      font-size: 2rem
+      bottom: -30px
+      right: 10px
+      transform: none !important
+      transition: none
   @include minRWD(1024px)
     .index-intro-subject
       opacity: 0
@@ -177,18 +186,24 @@
           &:nth-child(4)
             transition: opacity 1s 2s, transform 1s 2s
 
-
 .index-classes
   position: relative
   background: $color-background-index
   padding: 100px 180px
+  @include betweenRWD(1440px, 1680px)
+    padding: 100px 80px
+  @include betweenRWD(1024px, 1439px)
+    padding: 60px
+  @include maxRWD(1023px)
+    padding: 50px 0 60px
   .index-classes-header
     position: relative
+    padding: 0 15px
     &::before
       content: ''
       display: block
       position: absolute
-      width: 100%
+      width: calc(100% - 30px)
       max-width: 500px
       height: 2px
       background: $color-theme
@@ -196,6 +211,8 @@
       left: 50%
       transform: translateX(-50%)
       transition: width 1s ease-out
+      @include maxRWD(1023px)
+        top: 43px
     .index-classes-subject
       line-height: 50px
       font-size: 2.375rem
@@ -209,6 +226,11 @@
       background-repeat: no-repeat
       margin: 0 0 20px
       padding-left: 18px
+      @include maxRWD(1023px)
+        line-height: 34px
+        font-size: 1.75rem
+        letter-spacing: 12px
+        padding-left: 12px
     .index-classes-desc
       width: 100%
       font-size: 1rem
@@ -220,6 +242,8 @@
         height: 24px
   .index-classes-option
     padding: 0 30px
+    @include maxRWD(1023px)
+      display: none
     > a
       font-size: 0.875rem
       color: $color-gray-0
@@ -230,14 +254,26 @@
         transition: all 0.3s
   .index-classes-list
     margin-top: 50px
+    @include betweenRWD(1024px, 1439px)
+      margin-top: 30px
+    @include maxRWD(1023px)
+      margin-top: 15px
     .index-classes-item
       width: 33.333%
       margin-bottom: 70px
+      @include betweenRWD(1024px, 1439px)
+        width: 50%
+        margin-bottom: 30px
+      @include maxRWD(1023px)
+        width: 100%
+        margin-bottom: 0
       > a
         display: block
         position: relative
         padding: 30px
         transition: background 0.5s
+        @include maxRWD(1023px)
+          padding: 15px
         .index-classes-item-tag
           display: block
           position: absolute
@@ -247,6 +283,9 @@
           padding: 6px 20px
           top: 20px
           right: 40px
+          @include maxRWD(1023px)
+            top: 0
+            right: 30px
         .index-classes-item-img
           img
             display: block
@@ -258,6 +297,8 @@
           white-space: nowrap
           overflow: hidden
           text-overflow: ellipsis
+          @include maxRWD(1023px)
+            white-space: inherit
         .index-classes-item-ranking
           margin-top: 10px
           span
@@ -349,6 +390,11 @@
     letter-spacing: 7px
     padding-right: 7px
     transition: background 0.5s
+    @include maxRWD(1023px)
+      max-width: calc(100% - 30px)
+      height: 50px
+      line-height: 50px
+      font-size: 0.9375rem
     &::after
       content: ''
       display: block
@@ -362,10 +408,16 @@
       margin-left: 60px
       transform: skewX(45deg)
       transition: margin 0.5s
+      @include maxRWD(1023px)
+        width: 60px
+        height: 10px
+        top: 18px
+        margin-left: 50px
     &:hover
       background: rgba($color-theme, 0.85)
-      &::after
-        margin-left: 80px
+      @include minRWD(1024px)
+        &::after
+          margin-left: 80px
   .index-float-relax
     position: absolute
     z-index: 20
@@ -381,7 +433,19 @@
     background-repeat: no-repeat
     left: 4.5%
     bottom: -500px
+    margin: 0
     transition: transform 2s ease-out
+    @include betweenRWD(1024px, 1440px)
+      bottom: -600px
+    @include maxRWD(1023px)
+      width: 240px
+      height: 60px
+      line-height: 60px
+      font-size: 3rem
+      left: 10px
+      bottom: -30px
+      transform: none !important
+      transition: none
   @include minRWD(1024px)
     .index-classes-header
       opacity: 0
@@ -409,14 +473,19 @@
         opacity: 1
         transition: opacity 1s
       
-
-
 .index-extend
   background: $color-white
   padding: 60px 180px 80px
+  @include betweenRWD(1440px, 1680px)
+    padding: 60px
+  @include betweenRWD(1024px, 1439px)
+    padding: 60px 15px
+  @include maxRWD(1023px)
+    padding: 80px 15px 60px
   .index-extend-header
     position: relative
     .index-extend-subject
+      position: relative
       line-height: 50px
       font-size: 2.375rem
       font-weight: bold
@@ -429,6 +498,34 @@
       background-repeat: no-repeat
       margin: 0 0 15px
       padding-left: 18px
+      &::before,
+      &::after
+        content: ''
+        display: block
+        position: absolute
+        width: 130px
+        height: 2px
+        background: $color-theme
+        top: 24px
+        left: 50%
+      &::before
+        margin-left: -260px
+      &::after
+        margin-left: 130px
+      @include maxRWD(1023px)
+        line-height: 42px
+        font-size: 2rem
+        &::before,
+        &::after
+          width: calc(50% - 110px)
+          top: 20px
+        &::before
+          left: 0
+          margin-left: 0
+        &::after
+          left: auto
+          right: 0
+          margin-left: 0
     .index-extend-desc
       font-size: 1rem
       color: $color-black-1
@@ -438,6 +535,8 @@
       padding-left: 9px
   .index-extend-option
     padding: 0 30px
+    @include maxRWD(1023px)
+      display: none
     > a
       font-size: 0.875rem
       color: $color-gray-0
@@ -500,9 +599,19 @@
   .index-extend-list
     position: relative
     margin-top: 35px
+    @include minRWD(1024px)
+      &::after
+        content: 'flickity'
+        display: none
     .index-extend-item
       width: 33.333%
       padding: 0 30px
+      @include betweenRWD(1024px, 1439px)
+        padding: 0 15px
+      @include maxRWD(1023px)
+        width: 100%
+        padding: 0
+        margin-bottom: 30px
       .index-extend-item-img
         position: relative
         img
@@ -516,6 +625,8 @@
         white-space: nowrap
         overflow: hidden
         text-overflow: ellipsis
+        @include maxRWD(1023px)
+          white-space: inherit
       .index-extend-item-desc
         line-height: 2
         font-size: 1rem
@@ -563,9 +674,9 @@
         transform: scaleX(1)
         transition: opacity 1s, transform 1s
 
-
-
 .index-sider
+  @include maxRWD(1023px)
+    display: none
   .index-sider-left
     position: fixed
     z-index: 90
@@ -579,6 +690,8 @@
     &.scroll-view
       left: 50px
       opacity: 1
+      @include betweenRWD(1024px, 1280px)
+        left: 20px
     .index-sider-left-follow
       font-size: 1rem
       color: $color-theme-dark
@@ -612,6 +725,8 @@
     &.scroll-view
       right: 50px
       opacity: 1
+      @include betweenRWD(1024px, 1280px)
+        right: 20px
     .index-sider-right-line
       display: block
       width: 2px

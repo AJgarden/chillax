@@ -66,7 +66,7 @@ $.fn.scrollView = function (options) {
       settings.onInit.call(this, $this)
     })
 
-    var currentTops = 0
+    var currentTops = $selector.map(() => 0)
 
     $(window)
       .on('scroll', function () {
@@ -80,6 +80,7 @@ $.fn.scrollView = function (options) {
               else if (typeof settings.start === 'string')
                 var pos = $(settings.start).offset().top - $(window).height()
               else var pos = settings.start
+              var pos = Math.max(pos, 1)
               if (settings.repeat === true) {
                 if (settings.end !== null) {
                   if (typeof settings.end === 'string') {
@@ -98,6 +99,7 @@ $.fn.scrollView = function (options) {
                   } else {
                     var posE = settings.end
                   }
+                  var posE = Math.min(posE, $(document).height() - 1)
                   if (scrollTop + settings.threshold >= pos && currentTops[i] < pos) {
                     $this.addClass(settings.addClass)
                     if (typeof settings.onAddClassAtStart === 'function') {
@@ -167,6 +169,7 @@ $.fn.scrollView = function (options) {
                 else if (typeof settings.start === 'string')
                   var pos = $(settings.start).offset().top - $(window).height()
                 else var pos = settings.start
+                var pos = Math.max(pos, 1)
                 if (settings.end !== null) {
                   if (typeof settings.end === 'string') {
                     if (settings.endKey == 'top')
@@ -184,6 +187,7 @@ $.fn.scrollView = function (options) {
                   } else {
                     var posE = settings.end
                   }
+                  var posE = Math.min(posE, $(document).height() - 1)
                   if (scrollTop + settings.threshold < pos && currentTops[i] >= pos) {
                     $this.removeClass(settings.addClass)
                     if (typeof settings.onRemoveClassAtStart === 'function') {

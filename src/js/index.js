@@ -29,6 +29,7 @@ $(function () {
     groupCells: 3,
     cellAlign: 'left',
     prevNextButtons: false,
+    watchCSS: true,
     on: {
       ready: function () {
         extendArrowPrev.attr('disabled', 'disabled')
