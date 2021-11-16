@@ -1,0 +1,209 @@
+[
+  {
+    "url": "class_detail.html",
+    "tag": {
+      "color": "#e57b47",
+      "text": "早鳥優惠中"
+    },
+    "img": "../assets/images/del/d-class-list-01.jpg",
+    "title": "五星主廚帶你做!! | 不藏私義大利私房菜",
+    "rank": {
+      "score": "5.0",
+      "stars": 5,
+      "comments": 3
+    },
+    "course": {
+      "duration": 480,
+      "attendees": 2150
+    },
+    "lecturer": {
+      "image": "../assets/images/del/d-lecturer-01.jpg",
+      "name": "林明健 Kin",
+      "department": "LONGTAIL"
+    },
+    "price": 4980
+  },
+  {
+    "url": "class_detail.html",
+    "tag": {
+      "color": "#ac6b33",
+      "text": "優惠組合"
+    },
+    "img": "../assets/images/del/d-class-list-02.jpg",
+    "title": "巧克力甜點大全 | 大師帶您進入味蕾世界",
+    "rank": {
+      "score": "5.0",
+      "stars": 5,
+      "comments": 3
+    },
+    "course": {
+      "duration": 480,
+      "attendees": 2150
+    },
+    "lecturer": {
+      "image": "../assets/images/del/d-lecturer-02.jpg",
+      "name": "Pia",
+      "department": "稻町森法式甜點舖"
+    },
+    "price": 4280
+  },
+  {
+    "url": "class_detail.html",
+    "tag": null,
+    "img": "../assets/images/del/d-class-list-03.jpg",
+    "title": "減重口慾不是夢 | 低熱量美食食譜把手教學",
+    "rank": {
+      "score": "5.0",
+      "stars": 5,
+      "comments": 3
+    },
+    "course": {
+      "duration": 480,
+      "attendees": 2150
+    },
+    "lecturer": {
+      "image": "../assets/images/del/d-lecturer-03.jpg",
+      "name": "Allen",
+      "department": "Fourplay"
+    },
+    "price": 4980
+  },
+  {
+    "url": "class_detail.html",
+    "tag": {
+      "color": "#e57b47",
+      "text": "早鳥優惠中"
+    },
+    "img": "../assets/images/del/d-class-list-01.jpg",
+    "title": "五星主廚帶你做!! | 不藏私義大利私房菜",
+    "rank": {
+      "score": "5.0",
+      "stars": 5,
+      "comments": 3
+    },
+    "course": {
+      "duration": 480,
+      "attendees": 2150
+    },
+    "lecturer": {
+      "image": "../assets/images/del/d-lecturer-01.jpg",
+      "name": "林明健 Kin",
+      "department": "LONGTAIL"
+    },
+    "price": 4980
+  },
+  {
+    "url": "class_detail.html",
+    "tag": {
+      "color": "#ac6b33",
+      "text": "優惠組合"
+    },
+    "img": "../assets/images/del/d-class-list-02.jpg",
+    "title": "巧克力甜點大全 | 大師帶您進入味蕾世界",
+    "rank": {
+      "score": "5.0",
+      "stars": 5,
+      "comments": 3
+    },
+    "course": {
+      "duration": 480,
+      "attendees": 2150
+    },
+    "lecturer": {
+      "image": "../assets/images/del/d-lecturer-02.jpg",
+      "name": "Pia",
+      "department": "稻町森法式甜點舖"
+    },
+    "price": 4280
+  },
+  {
+    "url": "class_detail.html",
+    "tag": null,
+    "img": "../assets/images/del/d-class-list-03.jpg",
+    "title": "減重口慾不是夢 | 低熱量美食食譜把手教學",
+    "rank": {
+      "score": "5.0",
+      "stars": 5,
+      "comments": 3
+    },
+    "course": {
+      "duration": 480,
+      "attendees": 2150
+    },
+    "lecturer": {
+      "image": "../assets/images/del/d-lecturer-03.jpg",
+      "name": "Allen",
+      "department": "Fourplay"
+    },
+    "price": 4980
+  },
+  {
+    "url": "class_detail.html",
+    "tag": {
+      "color": "#e57b47",
+      "text": "早鳥優惠中"
+    },
+    "img": "../assets/images/del/d-class-list-01.jpg",
+    "title": "五星主廚帶你做!! | 不藏私義大利私房菜",
+    "rank": {
+      "score": "5.0",
+      "stars": 5,
+      "comments": 3
+    },
+    "course": {
+      "duration": 480,
+      "attendees": 2150
+    },
+    "lecturer": {
+      "image": "../assets/images/del/d-lecturer-01.jpg",
+      "name": "林明健 Kin",
+      "department": "LONGTAIL"
+    },
+    "price": 4980
+  },
+  {
+    "url": "class_detail.html",
+    "tag": {
+      "color": "#ac6b33",
+      "text": "優惠組合"
+    },
+    "img": "../assets/images/del/d-class-list-02.jpg",
+    "title": "巧克力甜點大全 | 大師帶您進入味蕾世界",
+    "rank": {
+      "score": "5.0",
+      "stars": 5,
+      "comments": 3
+    },
+    "course": {
+      "duration": 480,
+      "attendees": 2150
+    },
+    "lecturer": {
+      "image": "../assets/images/del/d-lecturer-02.jpg",
+      "name": "Pia",
+      "department": "稻町森法式甜點舖"
+    },
+    "price": 4280
+  },
+  {
+    "url": "class_detail.html",
+    "tag": null,
+    "img": "../assets/images/del/d-class-list-03.jpg",
+    "title": "減重口慾不是夢 | 低熱量美食食譜把手教學",
+    "rank": {
+      "score": "5.0",
+      "stars": 5,
+      "comments": 3
+    },
+    "course": {
+      "duration": 480,
+      "attendees": 2150
+    },
+    "lecturer": {
+      "image": "../assets/images/del/d-lecturer-03.jpg",
+      "name": "Allen",
+      "department": "Fourplay"
+    },
+    "price": 4980
+  }
+]

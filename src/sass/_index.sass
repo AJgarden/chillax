@@ -1,17 +1,49 @@
 .page-index
+  position: relative
   background: $color-background-index
 
+.index-slogan
+  position: absolute
+  z-index: 110
+  width: 600px
+  height: 120px
+  line-height: 120px
+  font-size: 4.5rem
+  color: rgba($color-white, 0)
+  background-image: url('../images/index-slogan.png')
+  background-size: contain
+  background-position: center
+  background-repeat: no-repeat
+  text-align: center
+  top: 140px
+  right: 12%
+  margin: 0
+  opacity: 0
+  transform: translateX(80px)
+  transition: opacity 1s, transform 1s
+  &.scroll-view
+    opacity: 1
+    transform: translateX(0)
+  @include betweenRWD(1280px, 1440px)
+    width: 400px
+    height: 80px
+  @include betweenRWD(1024px, 1279px)
+    width: 400px
+    height: 80px
+    top: 120px
+  @include maxRWD(1023px)
+    display: none
 .index-banner
   position: relative
   padding-bottom: 55px
-  @include betweenRWD(1024px, 1280px)
+  @include maxRWD(1280px)
     padding-bottom: 30px
   .index-banner-carousel
-    transition: all 1s
+    transition: opacity 1s
     @include minRWD(1024px)
-      &:not(.is-inited)
-        opacity: 0
-        transform: scaleX(1.2)
+      opacity: 0
+      &.is-inited
+        opacity: 1
     .index-banner-carousel-item
       width: calc(100% - 200px)
       @include maxRWD(1023px)
@@ -154,37 +186,19 @@
       transform: none !important
       transition: none
   @include minRWD(1024px)
-    .index-intro-subject
-      opacity: 0
-      transform: scaleX(1.5)
-    .index-intro-desc
-      opacity: 0
-      transform: scaleX(1.5)
-    .index-intro-icons
-      .index-intro-icons-item
+    .index-intro-subject,
+    .index-intro-desc,
+    .index-intro-icons .index-intro-icons-item
         opacity: 0
-        transform: scale(1.5)
     &.scroll-view
-      .index-intro-subject
-        opacity: 1
-        transform: scaleX(1)
-        transition: opacity 1s, transform 1s
+      .index-intro-subject,
       .index-intro-desc
         opacity: 1
-        transform: scaleX(1)
-        transition: opacity 1s 0.5s, transform 1s 0.5s
+        transition: opacity 1s, transform 1s
       .index-intro-icons
         .index-intro-icons-item
           opacity: 1
-          transform: scale(1)
-          &:nth-child(1)
-            transition: opacity 1s 1s, transform 1s 1s
-          &:nth-child(2)
-            transition: opacity 1s 1.333s, transform 1s 1.333s
-          &:nth-child(3)
-            transition: opacity 1s 1.666s, transform 1s 1.666s
-          &:nth-child(4)
-            transition: opacity 1s 2s, transform 1s 2s
+          transition: opacity 1s 0.5s, transform 1s 0.5s
 
 .index-classes
   position: relative
@@ -447,26 +461,19 @@
       transform: none !important
       transition: none
   @include minRWD(1024px)
-    .index-classes-header
-      opacity: 0
-      transform: scaleX(1.5)
+    .index-classes-header,
     .index-classes-option
       opacity: 0
     &.scroll-view
-      .index-classes-header
-        opacity: 1
-        transform: scaleX(1)
-        transition: opacity 1s, transform 1s
+      .index-classes-header,
       .index-classes-option
         opacity: 1
         transition: opacity 1s
     .index-classes-list
       opacity: 0
-      transform: scaleX(1.5)
       &.scroll-view
         opacity: 1
-        transform: scaleX(1)
-        transition: opacity 1s, transform 1s
+        transition: opacity 1s
     .index-classes-more
       opacity: 0
       &.scroll-view
@@ -612,6 +619,8 @@
         width: 100%
         padding: 0
         margin-bottom: 30px
+        &:nth-child(n+4)
+          display: none
       .index-extend-item-img
         position: relative
         img
@@ -653,26 +662,19 @@
           color: $color-white
           background: $color-theme
   @include minRWD(1024px)
-    .index-extend-header
-      opacity: 0
-      transform: scaleX(1.5)
+    .index-extend-header,
     .index-extend-option
       opacity: 0
     &.scroll-view
-      .index-extend-header
-        opacity: 1
-        transform: scaleX(1)
-        transition: opacity 1s, transform 1s
+      .index-extend-header,
       .index-extend-option
         opacity: 1
         transition: opacity 1s
     .index-extend-list-wrapper
       opacity: 0
-      transform: scaleX(1.5)
       &.scroll-view
         opacity: 1
-        transform: scaleX(1)
-        transition: opacity 1s, transform 1s
+        transition: opacity 1s
 
 .index-sider
   @include maxRWD(1023px)

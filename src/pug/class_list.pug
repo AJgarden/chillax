@@ -1,0 +1,204 @@
+doctype html
+html
+  head
+    title chillax
+    include meta.pug
+  body
+    div.g-page-wrapper
+      include header.pug
+      div.list-page-inner
+        div.list-header.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+          div.list-header-subject.g-flex-wrapper.g-flex-align-end
+            h2.list-header-subject-title(style='background-image: url(../assets/images/list-class-subject.png)') 線上課程
+            p.list-header-subject-desc
+              | 精心研選有趣豐富的體驗內容
+              img(src="assets/images/index-classes-desc-emoji.png" alt="emoji")
+          div.list-header-selection
+            div.dropdown
+              button.btn.btn-default.dropdown-toggle(type='button' id='category-dropdown' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+                | 直接顯示目前類別
+                span.caret
+              ul.dropdown-menu(aria-labelledby='category-dropdown')
+                li.active
+                  a(href='#' title='文章類別1') 文章類別1
+                li
+                  a(href='#' title='文章類別2') 文章類別2
+                li
+                  a(href='#' title='文章類別3') 文章類別3
+        div.list-content
+          ul.reset.list-class.g-flex-wrapper.g-flex-align-start
+            li.list-class-item
+              a(href="" title="")
+                span.list-class-item-tag(style="background-color: #e57b47;") 早鳥優惠中
+                div.list-class-item-img
+                  img(src="assets/images/del/d-class-list-01.jpg" alt="")
+                h3.list-class-item-title 五星主廚帶你做!! | 不藏私義大利私房菜
+                div.list-class-item-ranking.g-flex-wrapper.g-flex-align-center
+                  span 5.0
+                  div.list-class-item-ranking-stars(data-stars="5")
+                  span (3)
+                p.list-class-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+                div.list-class-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                  div.list-class-item-lecturer.g-flex-wrapper.g-flex-align-start
+                    div.list-class-item-lecturer-img
+                      img(src="assets/images/del/d-lecturer-01.jpg" alt="林明健 Kin")
+                    div.list-class-item-lecturer-info
+                      p.list-class-item-lecturer-name 林明健 Kin
+                      p.list-class-item-lecturer-dept LONGTAIL
+                  div.list-class-item-price NT$4,980
+            li.list-class-item
+              a(href="" title="")
+                span.list-class-item-tag(style="background-color: #ac6b33;") 優惠組合
+                div.list-class-item-img
+                  img(src="assets/images/del/d-class-list-02.jpg" alt="")
+                h3.list-class-item-title 巧克力甜點大全 | 大師帶您進入味蕾世界
+                div.list-class-item-ranking.g-flex-wrapper.g-flex-align-center
+                  span 5.0
+                  div.list-class-item-ranking-stars(data-stars="5")
+                  span (3)
+                p.list-class-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+                div.list-class-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                  div.list-class-item-lecturer.g-flex-wrapper.g-flex-align-start
+                    div.list-class-item-lecturer-img
+                      img(src="assets/images/del/d-lecturer-02.jpg" alt="Pia")
+                    div.list-class-item-lecturer-info
+                      p.list-class-item-lecturer-name Pia
+                      p.list-class-item-lecturer-dept 稻町森法式甜點舖
+                  div.list-class-item-price NT$4,280
+            li.list-class-item
+              a(href="" title="")
+                div.list-class-item-img
+                  img(src="assets/images/del/d-class-list-03.jpg" alt="")
+                h3.list-class-item-title 減重口慾不是夢 | 低熱量美食食譜把手教學
+                div.list-class-item-ranking.g-flex-wrapper.g-flex-align-center
+                  span 5.0
+                  div.list-class-item-ranking-stars(data-stars="5")
+                  span (3)
+                p.list-class-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+                div.list-class-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                  div.list-class-item-lecturer.g-flex-wrapper.g-flex-align-start
+                    div.list-class-item-lecturer-img
+                      img(src="assets/images/del/d-lecturer-03.jpg" alt="Allen")
+                    div.list-class-item-lecturer-info
+                      p.list-class-item-lecturer-name Allen
+                      p.list-class-item-lecturer-dept Fourplay
+                  div.list-class-item-price NT$4,980
+            li.list-class-item
+              a(href="" title="")
+                span.list-class-item-tag(style="background-color: #e57b47;") 早鳥優惠中
+                div.list-class-item-img
+                  img(src="assets/images/del/d-class-list-01.jpg" alt="")
+                h3.list-class-item-title 五星主廚帶你做!! | 不藏私義大利私房菜
+                div.list-class-item-ranking.g-flex-wrapper.g-flex-align-center
+                  span 5.0
+                  div.list-class-item-ranking-stars(data-stars="5")
+                  span (3)
+                p.list-class-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+                div.list-class-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                  div.list-class-item-lecturer.g-flex-wrapper.g-flex-align-start
+                    div.list-class-item-lecturer-img
+                      img(src="assets/images/del/d-lecturer-01.jpg" alt="林明健 Kin")
+                    div.list-class-item-lecturer-info
+                      p.list-class-item-lecturer-name 林明健 Kin
+                      p.list-class-item-lecturer-dept LONGTAIL
+                  div.list-class-item-price NT$4,980
+            li.list-class-item
+              a(href="" title="")
+                span.list-class-item-tag(style="background-color: #ac6b33;") 優惠組合
+                div.list-class-item-img
+                  img(src="assets/images/del/d-class-list-02.jpg" alt="")
+                h3.list-class-item-title 巧克力甜點大全 | 大師帶您進入味蕾世界
+                div.list-class-item-ranking.g-flex-wrapper.g-flex-align-center
+                  span 5.0
+                  div.list-class-item-ranking-stars(data-stars="5")
+                  span (3)
+                p.list-class-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+                div.list-class-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                  div.list-class-item-lecturer.g-flex-wrapper.g-flex-align-start
+                    div.list-class-item-lecturer-img
+                      img(src="assets/images/del/d-lecturer-02.jpg" alt="Pia")
+                    div.list-class-item-lecturer-info
+                      p.list-class-item-lecturer-name Pia
+                      p.list-class-item-lecturer-dept 稻町森法式甜點舖
+                  div.list-class-item-price NT$4,280
+            li.list-class-item
+              a(href="" title="")
+                div.list-class-item-img
+                  img(src="assets/images/del/d-class-list-03.jpg" alt="")
+                h3.list-class-item-title 減重口慾不是夢 | 低熱量美食食譜把手教學
+                div.list-class-item-ranking.g-flex-wrapper.g-flex-align-center
+                  span 5.0
+                  div.list-class-item-ranking-stars(data-stars="5")
+                  span (3)
+                p.list-class-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+                div.list-class-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                  div.list-class-item-lecturer.g-flex-wrapper.g-flex-align-start
+                    div.list-class-item-lecturer-img
+                      img(src="assets/images/del/d-lecturer-03.jpg" alt="Allen")
+                    div.list-class-item-lecturer-info
+                      p.list-class-item-lecturer-name Allen
+                      p.list-class-item-lecturer-dept Fourplay
+                  div.list-class-item-price NT$4,980
+            li.list-class-item
+              a(href="" title="")
+                span.list-class-item-tag(style="background-color: #e57b47;") 早鳥優惠中
+                div.list-class-item-img
+                  img(src="assets/images/del/d-class-list-01.jpg" alt="")
+                h3.list-class-item-title 五星主廚帶你做!! | 不藏私義大利私房菜
+                div.list-class-item-ranking.g-flex-wrapper.g-flex-align-center
+                  span 5.0
+                  div.list-class-item-ranking-stars(data-stars="5")
+                  span (3)
+                p.list-class-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+                div.list-class-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                  div.list-class-item-lecturer.g-flex-wrapper.g-flex-align-start
+                    div.list-class-item-lecturer-img
+                      img(src="assets/images/del/d-lecturer-01.jpg" alt="林明健 Kin")
+                    div.list-class-item-lecturer-info
+                      p.list-class-item-lecturer-name 林明健 Kin
+                      p.list-class-item-lecturer-dept LONGTAIL
+                  div.list-class-item-price NT$4,980
+            li.list-class-item
+              a(href="" title="")
+                span.list-class-item-tag(style="background-color: #ac6b33;") 優惠組合
+                div.list-class-item-img
+                  img(src="assets/images/del/d-class-list-02.jpg" alt="")
+                h3.list-class-item-title 巧克力甜點大全 | 大師帶您進入味蕾世界
+                div.list-class-item-ranking.g-flex-wrapper.g-flex-align-center
+                  span 5.0
+                  div.list-class-item-ranking-stars(data-stars="5")
+                  span (3)
+                p.list-class-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+                div.list-class-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                  div.list-class-item-lecturer.g-flex-wrapper.g-flex-align-start
+                    div.list-class-item-lecturer-img
+                      img(src="assets/images/del/d-lecturer-02.jpg" alt="Pia")
+                    div.list-class-item-lecturer-info
+                      p.list-class-item-lecturer-name Pia
+                      p.list-class-item-lecturer-dept 稻町森法式甜點舖
+                  div.list-class-item-price NT$4,280
+            li.list-class-item
+              a(href="" title="")
+                div.list-class-item-img
+                  img(src="assets/images/del/d-class-list-03.jpg" alt="")
+                h3.list-class-item-title 減重口慾不是夢 | 低熱量美食食譜把手教學
+                div.list-class-item-ranking.g-flex-wrapper.g-flex-align-center
+                  span 5.0
+                  div.list-class-item-ranking-stars(data-stars="5")
+                  span (3)
+                p.list-class-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+                div.list-class-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                  div.list-class-item-lecturer.g-flex-wrapper.g-flex-align-start
+                    div.list-class-item-lecturer-img
+                      img(src="assets/images/del/d-lecturer-03.jpg" alt="Allen")
+                    div.list-class-item-lecturer-info
+                      p.list-class-item-lecturer-name Allen
+                      p.list-class-item-lecturer-dept Fourplay
+                  div.list-class-item-price NT$4,980
+          button.list-more.list-more-class
+            span 載入更多
+            span.default ...
+            i.fas.fa-spinner
+      include footer.pug
+    include script.pug
+    script(src="assets/js/list.js")

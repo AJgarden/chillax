@@ -142,11 +142,15 @@
           transition: all 1s
           @include betweenRWD(1024px, 1680px)
             right: 30px
+          @include maxRWD(1023px)
+            right: 0
       &.scroll-view
         span
           &.ghost
             bottom: 20px
             opacity: 1
+            @include maxRWD(1023px)
+              bottom: 0
   .footer-copyright
     background: $color-theme
     padding: 275px 30px 30px

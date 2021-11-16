@@ -60,6 +60,7 @@ main
 html
   font-size: 16px
 body
+  width: 100%
   line-height: 1.5
   font-size: 1rem
   font-family: sans-serif
@@ -69,7 +70,9 @@ body
 // page
 .g-page-wrapper
   position: relative
+  background: $color-background-page
   padding-top: 204px
+  overflow: hidden
   @include betweenRWD(1281px, 1680px)
     padding-top: 180px
   @include betweenRWD(1024px, 1280px)
@@ -101,4 +104,68 @@ body
   justify-content: space-between
 .g-flex-justify-space-around
   justify-content: space-around
+
+// bootstrap cover
+.dropdown
+  .btn
+    display: block
+    position: relative
+    min-width: 240px
+    height: 42px
+    line-height: 1.5
+    font-size: 1rem
+    color: $color-button-dropdown-text !important
+    border-color: $color-button-dropdown-border
+    background: $color-button-dropdown-bg !important
+    border-radius: 0
+    text-align: left
+    padding: 8px 38px 8px 16px
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    outline: none
+    transition: border 0.3s, background 0.3s
+    .caret
+      display: block
+      position: absolute
+      border-top: 8px solid $color-black-0
+      border-left: 5px solid transparent
+      border-right: 5px solid transparent
+      top: 50%
+      right: 16px
+      margin-top: -4px
+      transform-origin: center 4px
+      transition: transform 0.3s
+    &:hover,
+    &:focus,
+    &:active
+      border-color: $color-button-dropdown-border-hover !important
+  &:hover
+    .btn
+      border-color: $color-button-dropdown-border-hover !important
+  &.open
+    .btn
+      border-color: $color-button-dropdown-border-hover !important
+      .caret
+        transform: rotate(-180deg)
+  .dropdown-menu
+    min-width: 100%
+    border-color: $color-button-dropdown-border-hover
+    border-radius: 0
+    box-shadow: 0 2px 6px rgba($color-black-0, 0.15)
+    padding: 4px 0
+    > li
+      > a
+        line-height: 1.5
+        font-size: 1rem
+        color: $color-button-dropdown-text
+        padding: 4px 16px
+        &:hover
+          background: rgba($color-theme, 0.1)
+      &.active
+        > a
+          color: $color-white
+          background: $color-theme
+
+
 

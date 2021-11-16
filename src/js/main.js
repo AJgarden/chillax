@@ -48,8 +48,8 @@ if (!cookies.some((cookie) => cookie.includes('demo_validation='))) {
   )
   $(document).on('keyup', '#demo-validation-input', function (event) {
     if (event.currentTarget.value === '1234') {
-      $('#demo-validation-box').remove()
-      document.cookie = `demo_validation=true; max-age=86400`
+      document.cookie = 'demo_validation=true; max-age=604800'
+      window.location.reload()
     }
   })
 }

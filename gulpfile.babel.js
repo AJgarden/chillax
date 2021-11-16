@@ -58,11 +58,11 @@ const jsCompile = () => {
         presets: ['@babel/preset-env'],
       })
     )
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(
       rename({
         dirname: '',
-        extname: '.min.js',
+        extname: '.js',
       })
     )
     .pipe(dest('dist/assets/js/'))

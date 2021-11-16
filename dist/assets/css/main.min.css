@@ -20,9 +20,9 @@ ol, ul, li { margin: 0; padding: 0; list-style: none; }
 
 html { font-size: 16px; }
 
-body { line-height: 1.5; font-size: 1rem; font-family: sans-serif; overflow-x: hidden; }
+body { width: 100%; line-height: 1.5; font-size: 1rem; font-family: sans-serif; overflow-x: hidden; }
 
-.g-page-wrapper { position: relative; padding-top: 204px; }
+.g-page-wrapper { position: relative; background: #f7f6f5; padding-top: 204px; overflow: hidden; }
 
 @media (min-width: 1281px) and (max-width: 1680px) { .g-page-wrapper { padding-top: 180px; } }
 
@@ -51,3 +51,23 @@ body { line-height: 1.5; font-size: 1rem; font-family: sans-serif; overflow-x: h
 .g-flex-justify-space-between { justify-content: space-between; }
 
 .g-flex-justify-space-around { justify-content: space-around; }
+
+.dropdown .btn { display: block; position: relative; min-width: 240px; height: 42px; line-height: 1.5; font-size: 1rem; color: #666666 !important; border-color: #e1e1e1; background: #ffffff !important; border-radius: 0; text-align: left; padding: 8px 38px 8px 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; outline: none; transition: border 0.3s, background 0.3s; }
+
+.dropdown .btn .caret { display: block; position: absolute; border-top: 8px solid #000000; border-left: 5px solid transparent; border-right: 5px solid transparent; top: 50%; right: 16px; margin-top: -4px; transform-origin: center 4px; transition: transform 0.3s; }
+
+.dropdown .btn:hover, .dropdown .btn:focus, .dropdown .btn:active { border-color: #c2c2c2 !important; }
+
+.dropdown:hover .btn { border-color: #c2c2c2 !important; }
+
+.dropdown.open .btn { border-color: #c2c2c2 !important; }
+
+.dropdown.open .btn .caret { transform: rotate(-180deg); }
+
+.dropdown .dropdown-menu { min-width: 100%; border-color: #c2c2c2; border-radius: 0; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); padding: 4px 0; }
+
+.dropdown .dropdown-menu > li > a { line-height: 1.5; font-size: 1rem; color: #666666; padding: 4px 16px; }
+
+.dropdown .dropdown-menu > li > a:hover { background: rgba(204, 142, 103, 0.1); }
+
+.dropdown .dropdown-menu > li.active > a { color: #ffffff; background: #cc8e67; }

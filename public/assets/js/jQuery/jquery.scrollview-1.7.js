@@ -80,8 +80,8 @@ $.fn.scrollView = function (options) {
               else if (typeof settings.start === 'string')
                 var pos = $(settings.start).offset().top - $(window).height()
               else var pos = settings.start
-              var pos = Math.max(pos, 1)
               if (settings.repeat === true) {
+                var pos = Math.max(pos, 1)
                 if (settings.end !== null) {
                   if (typeof settings.end === 'string') {
                     if (settings.endKey === 'top')

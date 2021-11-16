@@ -1,0 +1,303 @@
+// news
+.news-detail-content
+  padding: 0 310px
+  @include betweenRWD(1280px, 1680px)
+    padding: 0 180px
+  @include betweenRWD(1024px, 1279px)
+    padding: 0 60px
+  @include maxRWD(1023px)
+    padding: 0 15px
+  .news-detail-content-board
+    background: $color-white
+    .news-detail-content-img
+      img
+        display: block
+        width: 100%
+  .news-detail-content-inner
+    padding: 40px 60px 80px
+    @include maxRWD(1023px)
+      padding: 30px 15px
+  .news-detail-content-title
+    font-size: 2.25rem
+    font-weight: bold
+    margin: 0
+    @include maxRWD(1023px)
+      font-size: 1.75rem
+  .news-detail-content-header
+    margin: 30px 0 20px
+    @include maxRWD(1023px)
+      margin: 20px 0 10px
+    .news-detail-content-guide
+      width: 50%
+      display: inline-flex
+      align-items: flex-start
+      @include maxRWD(1023px)
+        width: 100%
+      > a
+        font-size: 1rem
+        color: $color-gray-0
+        text-decoration: underline
+        cursor: pointer
+        margin-bottom: 10px
+        &+ a
+          margin-left: 15px
+        &.go-back
+          color: $color-anchor-news-goback
+        &:hover
+          color: $color-black-0
+          text-decoration: none
+    .news-detail-content-breadcrumb
+      width: 50%
+      display: flex
+      align-items: flex-start
+      justify-content: flex-end
+      @include maxRWD(1023px)
+        width: 100%
+      li
+        margin-bottom: 10px
+        &+ li
+          margin-left: 6px
+          &::before
+            content: '>'
+            margin-right: 6px
+        a
+          color: $color-black-2
+          &:hover
+            color: $color-theme
+  .news-detail-content-class
+    color: $color-white
+    background: $color-black-3
+    margin: 60px 0
+    padding: 25px 35px 25px 55px
+    @include maxRWD(1023px)
+      margin: 30px 0
+      padding: 15px 20px
+    .news-detail-content-class-info
+      width: calc(100% - 250px)
+      padding-right: 60px
+      @include maxRWD(1023px)
+        width: 100%
+        padding-right: 0
+    .news-detail-content-class-subject
+      font-size: 1.5rem
+      border-bottom: 1px solid $color-white
+      padding-bottom: 10px
+      margin: 0
+      @include maxRWD(1023px)
+        font-size: 1.25rem
+    .news-detail-content-class-title
+      font-size: 1.5rem
+      font-weight: bold
+      margin: 12px 0
+      @include maxRWD(1023px)
+        font-size: 1.25rem
+        margin: 10px 0
+    .news-detail-content-class-desc
+      line-height: 2
+      font-size: 1rem
+      margin: 0
+    .news-detail-content-class-link
+      position: relative
+      display: block
+      width: 250px
+      height: 50px
+      line-height: 50px
+      font-size: 1.25rem
+      color: $color-white
+      background: $color-theme
+      letter-spacing: 6px
+      text-align: center
+      padding-right: 10px
+      transition: all 0.3s
+      @include maxRWD(1023px)
+        width: 100%
+        max-width: 250px
+        margin-top: 20px
+      &::before,
+      &::after
+        content: ''
+        display: block
+        position: absolute
+        width: 10px
+        height: 10px
+        border-top: 1px solid $color-white
+        border-right: 1px solid $color-white
+        top: 50%
+        right: 70px
+        margin-top: -5px
+        transform: rotate(45deg)
+        transition: all 0.3s
+      &:hover
+        background: rgba($color-theme, 0.7)
+        &::after
+          right: 60px
+  .news-detail-content-footer
+    width: 50%
+    display: inline-flex
+    align-items: flex-start
+    > a
+      font-size: 1rem
+      color: $color-gray-0
+      text-decoration: underline
+      cursor: pointer
+      margin-bottom: 10px
+      &+ a
+        margin-left: 15px
+      &.go-back
+        color: $color-theme
+      &:hover
+        color: $color-black-0
+        text-decoration: none
+.news-detail-extend
+  margin-top: 90px
+  padding: 0 150px
+  @include betweenRWD(1280px, 1680px)
+    padding: 0 60px
+  @include betweenRWD(1024px, 1279px)
+    padding: 0 30px
+  @include maxRWD(1023px)
+    margin-top: 40px
+    padding: 0 15px
+  .news-detail-extend-header
+    .news-detail-extend-subject
+      width: 185px
+      line-height: 42px
+      font-size: 2.25rem
+      color: rgba($color-white, 0)
+      background-image: url(../images/detail-extend-subject.png)
+      background-size: contain
+      background-position: left center
+      background-repeat: no-repeat
+      letter-spacing: 10px
+      text-align: center
+      margin: 0
+      @include maxRWD(1023px)
+        width: 125px
+        line-height: 28px
+        font-size: 1.5rem
+        letter-spacing: 4px
+    .news-detail-extend-option
+      padding: 0 30px
+      @include maxRWD(1023px)
+        display: none
+      > a
+        font-size: 0.875rem
+        color: $color-gray-0
+        text-decoration: underline
+        &:hover
+          color: $color-black-1
+          text-decoration: none
+          transition: all 0.3s
+      button.news-detail-extend-arrow
+        display: block
+        position: relative
+        width: 30px
+        height: 30px
+        font-size: 0
+        border: none
+        background: $color-button-arrow-bg
+        border-radius: 100%
+        margin-left: 10px
+        cursor: pointer
+        transition: background .3s
+        &::before
+          content: ''
+          display: block
+          position: absolute
+          width: 8px
+          height: 8px
+          top: 50%
+          margin-top: -4px
+          border-color: $color-button-arrow-tip
+          border-style: solid
+          transform: rotate(45deg)
+          transition: border .3s
+        &.prev
+          &::before
+            border-left-width: 2px
+            border-bottom-width: 2px
+            border-top-width: 0px
+            border-right-width: 0px
+            left: 50%
+            margin-left: -3px
+        &.next
+          &::before
+            border-top-width: 2px
+            border-right-width: 2px
+            border-left-width: 0px
+            border-bottom-width: 0px
+            right: 50%
+            margin-right: -3px
+        &:hover
+          background: $color-button-arrow-bg-active
+          &::before
+            border-color: $color-button-arrow-tip-active
+        &:disabled
+          background: $color-button-arrow-bg-disabled
+          cursor: not-allowed
+          &::before
+            border-color: $color-button-arrow-tip-disabled
+  .news-detail-extend-list-wrapper
+    overflow: hidden
+    .news-detail-extend-list
+      position: relative
+      margin-top: 30px
+      @include minRWD(1024px)
+        &::after
+          content: 'flickity'
+          display: none
+      @include maxRWD(1023px)
+        margin-top: 15px
+    .news-detail-extend-item
+      width: 33.333%
+      padding: 0 30px
+      @include betweenRWD(1024px, 1439px)
+        padding: 0 15px
+      @include maxRWD(1023px)
+        width: 100%
+        padding: 0
+        margin-bottom: 30px
+        &:nth-child(n+4)
+          display: none
+      .news-detail-extend-item-img
+        position: relative
+        img
+          display: block
+          width: 100%
+      .news-detail-extend-item-title
+        font-size: 1.5rem
+        font-weight: bold
+        color: $color-theme
+        margin: 18px 0 0
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+        @include maxRWD(1023px)
+          white-space: inherit
+      .news-detail-extend-item-desc
+        line-height: 2
+        font-size: 1rem
+        color: $color-black-1
+        margin: 15px 0 0
+        display: -webkit-box
+        -webkit-line-clamp: 3
+        -webkit-box-orient: vertical
+        overflow: hidden
+        text-overflow: ellipsis
+      .news-detail-extend-item-more
+        display: block
+        height: 40px
+        line-height: 38px
+        font-size: 1.25rem
+        color: $color-theme
+        border: 1px solid $color-theme
+        text-align: center
+        letter-spacing: 4px
+        margin-top: 45px
+        padding-left: 4px
+        transition: color 0.3s, background 0.3s
+        &:hover
+          color: $color-white
+          background: $color-theme
+
+// class

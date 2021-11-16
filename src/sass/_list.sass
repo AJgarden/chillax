@@ -1,0 +1,250 @@
+.list-page-inner
+  padding: 75px 220px 30px
+  @include betweenRWD(1440px, 1680px)
+    padding: 75px 80px 30px
+  @include betweenRWD(1024px, 1439px)
+    padding: 50px 60px 30px
+  @include maxRWD(1023px)
+    padding: 30px 15px 50px
+.list-header
+  border-bottom: 2px solid $color-theme
+  padding-bottom: 15px
+  .list-header-subject
+    .list-header-subject-title
+      width: 185px
+      line-height: 42px
+      font-size: 2.25rem
+      color: rgba($color-white, 0)
+      background-size: contain
+      background-position: left center
+      background-repeat: no-repeat
+      letter-spacing: 10px
+      text-align: center
+      margin: 0
+    .list-header-subject-desc
+      font-size: 1rem
+      letter-spacing: 6px
+      margin: 0 0 0 25px
+      img
+        width: 24px
+    @include maxRWD(1023px)
+      display: none
+.list-content
+  margin-top: 60px
+  @include maxRWD(1023px)
+    margin-top: 30px
+.list-more
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  max-width: 660px
+  height: 60px
+  font-size: 1.25rem
+  color: $color-white
+  border: none
+  background: $color-gray-1
+  letter-spacing: 6px
+  padding-left: 6px
+  margin: 50px auto 0
+  transition: all 0.3s
+  span,
+  i
+    display: block
+  .fas
+    width: 26px
+    height: 26px
+    line-height: 26px
+    text-align: center
+    padding-left: 3px
+    display: none
+    animation: spinner 2s infinite linear
+  &:hover
+    background: $color-theme
+  &:disabled
+    background: $color-gray-9
+    cursor: not-allowed
+    .default
+      display: none
+    .fas
+      display: block
+
+// news list
+.list-news
+  margin: 0 -35px
+  @include betweenRWD(1024px, 1280px)
+    margin: 0 -15px
+  @include maxRWD(1023px)
+    margin: 0
+  .list-news-item
+    width: 33.333%
+    padding: 0 35px 50px
+    @include betweenRWD(1024px, 1280px)
+      padding: 0 15px 30px
+    @include maxRWD(1023px)
+      width: 100%
+      padding: 0 0 30px
+    .list-news-item-img
+      img
+        display: block
+        width: 100%
+    .list-news-item-title
+      font-size: 1.5rem
+      font-weight: bold
+      color: $color-theme
+      margin: 18px 0 0
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+    .list-news-item-desc
+      line-height: 2
+      font-size: 1rem
+      color: $color-black-1
+      margin: 15px 0 0
+      display: -webkit-box
+      -webkit-line-clamp: 3
+      -webkit-box-orient: vertical
+      overflow: hidden
+      text-overflow: ellipsis
+    .list-news-item-footer
+      margin-top: 25px
+      .list-news-item-link
+        font-size: 1rem
+        color: $color-theme
+        text-decoration: underline
+        &:hover
+          color: $color-black-0
+          text-decoration: none
+      .list-news-item-tag
+        > a
+          font-size: 1rem
+          color: $color-gray-0
+          text-decoration: underline
+          &+ a
+            margin-left: 10px
+          &:hover
+            text-decoration: none
+
+// class
+.list-class
+  margin: -30px -30px -10px
+  @include maxRWD(1023px)
+    margin: 0 -15px
+  .list-class-item
+    width: 33.333%
+    margin-bottom: 20px
+    @include betweenRWD(1024px, 1439px)
+      width: 50%
+      margin-bottom: 30px
+    @include maxRWD(1023px)
+      width: 100%
+      margin-bottom: 0
+    > a
+      display: block
+      position: relative
+      padding: 30px
+      transition: background 0.5s
+      @include maxRWD(1023px)
+        padding: 15px
+      .list-class-item-tag
+        display: block
+        position: absolute
+        z-index: 2
+        font-size: 1.125rem
+        color: $color-white
+        padding: 6px 20px
+        top: 30px
+        right: 30px
+        @include maxRWD(1023px)
+          top: 0
+          right: 30px
+      .list-class-item-img
+        img
+          display: block
+          width: 100%
+      .list-class-item-title
+        font-size: 1.5rem
+        color: $color-black-0
+        margin: 15px 0 0
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+        @include maxRWD(1023px)
+          white-space: inherit
+      .list-class-item-ranking
+        margin-top: 10px
+        span
+          line-height: 20px
+          font-size: 0.875rem
+          color: $color-gray-0
+        .list-class-item-ranking-stars
+          width: 90px
+          height: 16px
+          background-image: url(../images/g-ranking-stars.png)
+          background-size: 180px 16px
+          background-repeat: no-repeat
+          margin: 0 4px
+          &[data-stars^="5"]
+            background-position: 0 0
+          &[data-stars^="4"]
+            background-position: -18px 0
+          &[data-stars^="3"]
+            background-position: -36px 0
+          &[data-stars^="2"]
+            background-position: -54px 0
+          &[data-stars^="1"]
+            background-position: -72px 0
+          &[data-stars^="0"]
+            background-position: -90px 0
+      .list-class-item-info
+        font-size: 1rem
+        color: $color-gray-0
+        margin: 12px 0 0
+      .list-class-item-footer
+        margin-top: 20px
+        .list-class-item-lecturer
+          padding-bottom: 0.5rem
+          .list-class-item-lecturer-img
+            position: relative
+            margin-right: 20px
+            &::before
+              content: ''
+              display: block
+              position: absolute
+              width: 38px
+              height: 38px
+              border: 1px solid rgba($color-black-0, 0.25)
+              border-radius: 100%
+              top: 50%
+              left: 50%
+              transform: translate(-50%, -50%)
+              transition: width 0.5s, height 0.5s
+            img
+              position: relative
+              z-list: 2
+              display: block
+              width: 40px
+              height: 40px
+              border-radius: 100%
+          .list-class-item-lecturer-info
+            max-width: 200px
+            .list-class-item-lecturer-name
+              font-size: 1rem
+              color: $color-black-1
+              margin: 0
+            .list-class-item-lecturer-dept
+              font-size: 1rem
+              color: $color-gray-0
+              margin: 0
+        .list-class-item-price
+          font-size: 1.875rem
+          font-family: Georgia, 'Times New Roman', Times, serif
+          color: $color-theme
+      &:hover
+        background: $color-white
+        .list-class-item-footer
+          .list-class-item-lecturer
+            .list-class-item-lecturer-img
+              &::before
+                width: 46px
+                height: 46px

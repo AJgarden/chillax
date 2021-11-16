@@ -4,7 +4,10 @@ $(function () {
   const bannerItems = $('.index-banner-carousel-item', bannerElem)
   const bannerFlkty = new Flickity('.index-banner-carousel', {
     wrapAround: true,
+    autoPlay: 5000,
+    pauseAutoPlayOnHover: false,
     prevNextButtons: false,
+    imagesLoaded: true,
     on: {
       ready: function () {
         bannerElem.addClass('is-inited')
@@ -30,6 +33,7 @@ $(function () {
     cellAlign: 'left',
     prevNextButtons: false,
     watchCSS: true,
+    imagesLoaded: true,
     on: {
       ready: function () {
         extendArrowPrev.attr('disabled', 'disabled')
