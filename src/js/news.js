@@ -1,5 +1,5 @@
 $(function () {
-  // news extend carousel
+  // extend carousel
   const extendArrowPrev = $('.news-detail-extend-arrow.prev')
   const extendArrowNext = $('.news-detail-extend-arrow.next')
   const extendFlkty = new Flickity('.news-detail-extend-list', {

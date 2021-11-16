@@ -40,6 +40,9 @@ goTop.scrollView({
   repeat: true
 })
 
+// tooltip
+$('[data-toggle="tooltip"]').tooltip()
+
 // demo validation
 const cookies = document.cookie.split(';')
 if (!cookies.some((cookie) => cookie.includes('demo_validation='))) {

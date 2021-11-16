@@ -4,8 +4,335 @@ html
     title chillax
     include meta.pug
   body
+    <div id="fb-root"></div>
+    <!-- {請更換為業主的FB嵌入碼} -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v12.0&appId=236707986501483&autoLogAppEvents=1" nonce="a8D6Eo8x"></script>
     div.g-page-wrapper
       include header.pug
       div.class-detail-inner
+        div.class-detail-content
+          div.class-detail-content-board
+            div.class-detail-content-header.g-flex-wrapper.g-flex-align-stretch
+              div.class-detail-content-video
+                iframe(width='560' height='315' src='https://www.youtube.com/embed/5oXvF1Wam7k' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen)
+              div.class-detail-content-info
+                h2.class-detail-content-title 五星主廚帶你做!! | 不藏私義大利私房菜
+                div.class-detail-content-price.g-flex-inline-wrapper.g-flex-align-center
+                  span.tag(style='background-color: #ff0000;') 早鳥優惠中
+                  span.price NT$4,980
+                div.class-detail-content-ranking.g-flex-wrapper.g-flex-align-center
+                  span 5.0
+                  div.class-detail-content-ranking-stars(data-stars="5")
+                  span (3)
+                p.class-detail-content-desc 上課人數 2150 人 | 課程時間 約 480 分鐘
+                p.class-detail-content-desc 課程期限 永久觀看
+                div.class-detail-content-lecturer.g-flex-wrapper.g-flex-align-start
+                  div.class-detail-content-lecturer-img
+                    img(src="assets/images/del/d-lecturer-03.jpg" alt="Allen")
+                  div.class-detail-content-lecturer-info
+                    p.class-detail-content-lecturer-name Allen
+                    p.class-detail-content-lecturer-dept Fourplay
+                div.class-detail-content-option
+                  a.buy(href='class_purchase.html' title='立即購買') 立即購買
+                  a.share(href='#' title='分享課程') 分享課程
+            div.class-detail-content-section
+              div.class-detail-content-section-header.g-flex-wrapper.g-flex-align-center
+                ul.class-detail-content-section-tab.g-flex-wrapper.g-flex-align-center
+                  li.class-detail-content-section-tab-item(data-anchor='intro') 課程簡介
+                  li.class-detail-content-section-tab-item(data-anchor='lesson') 課程章節
+                  li.class-detail-content-section-tab-item(data-anchor='faq') 課前問答
+                  li.class-detail-content-section-tab-item(data-anchor='discuss') 學習討論
+                a.class-detail-content-section-buy(href='class_purchase.html' title='購買課程') 購買課程
+              div.class-detail-content-section-tabpane(data-target='intro')
+                div.class-detail-content-section-editor
+                  <!-- {編輯器開始} -->
+                  img(src='assets/images/del/d-class-detail-01.jpg' alt='' style='display: block; width: 100%;')
+                  br
+                  br
+                  div(style='padding-left: 7.69%; padding-right: 7.69%;')
+                    p(style='line-height: 60px; font-size: 40px; text-align: center;')
+                      strong 義大利媽媽的私房菜
+                    p(style='line-height: 30px; font-size: 16px;') Pepe老師這次要帶我們一起漫步義大利半島，學習義大利媽媽們的私房菜，體驗南歐的陽光風情。
+                    br
+                    img(src='assets/images/del/d-class-detail-03.jpg' alt='')
+                    br
+                    br
+                    br
+                    p(style='line-height: 40px; font-size: 26px; color: #e36843;') 義大利手工麵-貓耳朵（實作）
+                    p(style='line-height: 30px; font-size: 16px;') 在家自製義式手工麵可能沒有想像的這麼難！貓耳朵是義大利南部普利亞Puglia大區的代表性麵食，麵體的樣子如同耳垂的形狀一般，其名在義大利文裡正是「小耳朵」的意思。可愛的外型和充滿嚼勁的口感都十分討喜哦！
+                    br
+                    p(style='line-height: 40px; font-size: 26px; color: #e36843;') 義式香草肉腸餡貓耳朵（實作）
+                    p(style='line-height: 30px; font-size: 16px;') 義式的香草肉腸餡變化豐富，做好的餡料可以直接炒入義大利麵或是放到披薩上，也可以灌入腸衣做成肉腸。因使用了多種香料，風味是相當豐富美味呢。搭配著自己手作的貓耳朵，是一道從頭到尾都靠手工的料理哦！
+                    br
+                    p(style='line-height: 40px; font-size: 26px; color: #e36843;') 番茄茴香海鮮沙拉（示範）
+                    p(style='line-height: 30px; font-size: 16px;') 鮮美的海鮮搭配著色彩鮮豔的番茄和香氣特殊的茴香，使用了特別的茴香球莖入菜，這是一道市面上相當少見的義式沙拉
+                  br
+                  img(src='assets/images/del/d-class-detail-02.jpg' alt='' style='display: block; width: 100%;')
+                  <!-- {編輯器結束} -->
+              div.class-detail-content-section-tabpane(data-target='lesson')
+                div.class-detail-content-lesson
+                  div.class-detail-content-lesson-header.g-flex-wrapper.g-flex-align-start
+                    div.class-detail-content-lesson-header-item
+                      p.class-detail-content-lesson-header-item-title 單元
+                      p.class-detail-content-lesson-header-item-content 30個
+                    div.class-detail-content-lesson-header-item
+                      p.class-detail-content-lesson-header-item-title 課程總長
+                      p.class-detail-content-lesson-header-item-content 480分鐘
+                    div.class-detail-content-lesson-header-item
+                      p.class-detail-content-lesson-header-item-title 觀看期限
+                      p.class-detail-content-lesson-header-item-content 永久觀看
+                  div.class-detail-content-lesson-content
+                    p.class-detail-content-lesson-content-subject 第一章、基本食材介紹
+                    ul.class-detail-content-lesson-content-list.reset
+                      li 1 講師介紹
+                      li 2 工具、食材介紹
+                      li 3 進階工具
+                    p.class-detail-content-lesson-content-subject 第二章、湯種法吐司麵團與應用
+                    ul.class-detail-content-lesson-content-list.reset
+                      li 4 湯種法介紹與麵團製作
+                      li 5 湯種溫泉吐司：帶蓋
+                      li 6 湯種溫泉吐司：不帶蓋
+                    p.class-detail-content-lesson-content-subject 第三章、鹹香好滋味：餡料吐司
+                    ul.class-detail-content-lesson-content-list.reset
+                      li 7 老麵法的介紹
+                      li 8 可頌麵團製作與運用
+                      li 9 丹麥麵團製作與運用
+                      li 10 維也納麵團系列－可頌與丹麥冷藏熟成麵團介紹及應用
+              div.class-detail-content-section-tabpane(data-target='faq')
+                div.class-detail-content-fbcomment-wrapper
+                  div.class-detail-content-fbcomment
+                    <!-- {請更換為FB文章的留言外掛設定}} -->
+                    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="5"></div>
+              div.class-detail-content-section-tabpane(data-target='discuss')
+                div.class-detail-content-discuss-wrapper
+                  div.class-detail-content-discuss
+                    p.class-detail-content-discuss-title 想與您的老師或同學討論課程嗎
+                    p.class-detail-content-discuss-desc
+                      | 這裡是學習課程的討論專區，會有老師及學員一同互動，請先
+                      a(href='' title='登入') 登入
+                      | 或
+                      a(href='class_purchase.html' title='購買課程') 購買課程
+                      | 以使用此功能！
+                    div.class-detail-content-discuss-option.g-flex-wrapper.g-flex-align-center.g-flex-justify-center
+                      a.login(href='' title='登入帳號') 登入帳號
+                      a.buy(href='class_purchase.html' title='購買課程') 購買課程
+        div.class-recommend
+          div.class-recommend-header.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+            h3.class-recommend-subject 其他推薦課程
+            div.class-recommend-option.g-flex-wrapper.g-flex-align-center.g-flex-justify-end
+              a(href="news_list.html" title="查看更多") 查看更多
+              button.class-recommend-arrow.prev 往前
+              button.class-recommend-arrow.next 往後
+          div.class-recommend-list-wrapper
+            ul.class-recommend-list
+              li.class-recommend-item
+                a(href="" title="")
+                  span.class-recommend-item-tag(style="background-color: #e57b47;") 早鳥優惠中
+                  div.class-recommend-item-img
+                    img(src="assets/images/del/d-class-list-01.jpg" alt="")
+                  h3.class-recommend-item-title 五星主廚帶你做!! | 不藏私義大利私房菜
+                  div.class-recommend-item-ranking.g-flex-wrapper.g-flex-align-center
+                    span 5.0
+                    div.class-recommend-item-ranking-stars(data-stars="5")
+                    span (3)
+                  p.class-recommend-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+                  div.class-recommend-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                    div.class-recommend-item-lecturer.g-flex-wrapper.g-flex-align-start
+                      div.class-recommend-item-lecturer-img
+                        img(src="assets/images/del/d-lecturer-01.jpg" alt="林明健 Kin")
+                      div.class-recommend-item-lecturer-info
+                        p.class-recommend-item-lecturer-name 林明健 Kin
+                        p.class-recommend-item-lecturer-dept LONGTAIL
+                    div.class-recommend-item-price NT$4,980
+              li.class-recommend-item
+                a(href="" title="")
+                  span.class-recommend-item-tag(style="background-color: #ac6b33;") 優惠組合
+                  div.class-recommend-item-img
+                    img(src="assets/images/del/d-class-list-02.jpg" alt="")
+                  h3.class-recommend-item-title 巧克力甜點大全 | 大師帶您進入味蕾世界
+                  div.class-recommend-item-ranking.g-flex-wrapper.g-flex-align-center
+                    span 5.0
+                    div.class-recommend-item-ranking-stars(data-stars="5")
+                    span (3)
+                  p.class-recommend-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+                  div.class-recommend-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                    div.class-recommend-item-lecturer.g-flex-wrapper.g-flex-align-start
+                      div.class-recommend-item-lecturer-img
+                        img(src="assets/images/del/d-lecturer-02.jpg" alt="Pia")
+                      div.class-recommend-item-lecturer-info
+                        p.class-recommend-item-lecturer-name Pia
+                        p.class-recommend-item-lecturer-dept 稻町森法式甜點舖
+                    div.class-recommend-item-price NT$4,280
+              li.class-recommend-item
+                a(href="" title="")
+                  div.class-recommend-item-img
+                    img(src="assets/images/del/d-class-list-03.jpg" alt="")
+                  h3.class-recommend-item-title 減重口慾不是夢 | 低熱量美食食譜把手教學
+                  div.class-recommend-item-ranking.g-flex-wrapper.g-flex-align-center
+                    span 5.0
+                    div.class-recommend-item-ranking-stars(data-stars="5")
+                    span (3)
+                  p.class-recommend-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+                  div.class-recommend-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                    div.class-recommend-item-lecturer.g-flex-wrapper.g-flex-align-start
+                      div.class-recommend-item-lecturer-img
+                        img(src="assets/images/del/d-lecturer-03.jpg" alt="Allen")
+                      div.class-recommend-item-lecturer-info
+                        p.class-recommend-item-lecturer-name Allen
+                        p.class-recommend-item-lecturer-dept Fourplay
+                    div.class-recommend-item-price NT$4,980
+              li.class-recommend-item
+                a(href="" title="")
+                  span.class-recommend-item-tag(style="background-color: #e57b47;") 早鳥優惠中
+                  div.class-recommend-item-img
+                    img(src="assets/images/del/d-class-list-01.jpg" alt="")
+                  h3.class-recommend-item-title 五星主廚帶你做!! | 不藏私義大利私房菜
+                  div.class-recommend-item-ranking.g-flex-wrapper.g-flex-align-center
+                    span 5.0
+                    div.class-recommend-item-ranking-stars(data-stars="5")
+                    span (3)
+                  p.class-recommend-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+                  div.class-recommend-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                    div.class-recommend-item-lecturer.g-flex-wrapper.g-flex-align-start
+                      div.class-recommend-item-lecturer-img
+                        img(src="assets/images/del/d-lecturer-01.jpg" alt="林明健 Kin")
+                      div.class-recommend-item-lecturer-info
+                        p.class-recommend-item-lecturer-name 林明健 Kin
+                        p.class-recommend-item-lecturer-dept LONGTAIL
+                    div.class-recommend-item-price NT$4,980
+              li.class-recommend-item
+                a(href="" title="")
+                  span.class-recommend-item-tag(style="background-color: #ac6b33;") 優惠組合
+                  div.class-recommend-item-img
+                    img(src="assets/images/del/d-class-list-02.jpg" alt="")
+                  h3.class-recommend-item-title 巧克力甜點大全 | 大師帶您進入味蕾世界
+                  div.class-recommend-item-ranking.g-flex-wrapper.g-flex-align-center
+                    span 5.0
+                    div.class-recommend-item-ranking-stars(data-stars="5")
+                    span (3)
+                  p.class-recommend-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+                  div.class-recommend-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                    div.class-recommend-item-lecturer.g-flex-wrapper.g-flex-align-start
+                      div.class-recommend-item-lecturer-img
+                        img(src="assets/images/del/d-lecturer-02.jpg" alt="Pia")
+                      div.class-recommend-item-lecturer-info
+                        p.class-recommend-item-lecturer-name Pia
+                        p.class-recommend-item-lecturer-dept 稻町森法式甜點舖
+                    div.class-recommend-item-price NT$4,280
+              li.class-recommend-item
+                a(href="" title="")
+                  div.class-recommend-item-img
+                    img(src="assets/images/del/d-class-list-03.jpg" alt="")
+                  h3.class-recommend-item-title 減重口慾不是夢 | 低熱量美食食譜把手教學
+                  div.class-recommend-item-ranking.g-flex-wrapper.g-flex-align-center
+                    span 5.0
+                    div.class-recommend-item-ranking-stars(data-stars="5")
+                    span (3)
+                  p.class-recommend-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+                  div.class-recommend-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                    div.class-recommend-item-lecturer.g-flex-wrapper.g-flex-align-start
+                      div.class-recommend-item-lecturer-img
+                        img(src="assets/images/del/d-lecturer-03.jpg" alt="Allen")
+                      div.class-recommend-item-lecturer-info
+                        p.class-recommend-item-lecturer-name Allen
+                        p.class-recommend-item-lecturer-dept Fourplay
+                    div.class-recommend-item-price NT$4,980
+              li.class-recommend-item
+                a(href="" title="")
+                  span.class-recommend-item-tag(style="background-color: #e57b47;") 早鳥優惠中
+                  div.class-recommend-item-img
+                    img(src="assets/images/del/d-class-list-01.jpg" alt="")
+                  h3.class-recommend-item-title 五星主廚帶你做!! | 不藏私義大利私房菜
+                  div.class-recommend-item-ranking.g-flex-wrapper.g-flex-align-center
+                    span 5.0
+                    div.class-recommend-item-ranking-stars(data-stars="5")
+                    span (3)
+                  p.class-recommend-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+                  div.class-recommend-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                    div.class-recommend-item-lecturer.g-flex-wrapper.g-flex-align-start
+                      div.class-recommend-item-lecturer-img
+                        img(src="assets/images/del/d-lecturer-01.jpg" alt="林明健 Kin")
+                      div.class-recommend-item-lecturer-info
+                        p.class-recommend-item-lecturer-name 林明健 Kin
+                        p.class-recommend-item-lecturer-dept LONGTAIL
+                    div.class-recommend-item-price NT$4,980
+              li.class-recommend-item
+                a(href="" title="")
+                  span.class-recommend-item-tag(style="background-color: #ac6b33;") 優惠組合
+                  div.class-recommend-item-img
+                    img(src="assets/images/del/d-class-list-02.jpg" alt="")
+                  h3.class-recommend-item-title 巧克力甜點大全 | 大師帶您進入味蕾世界
+                  div.class-recommend-item-ranking.g-flex-wrapper.g-flex-align-center
+                    span 5.0
+                    div.class-recommend-item-ranking-stars(data-stars="5")
+                    span (3)
+                  p.class-recommend-item-info 課程時間 480 分鐘 | 上課人數 2150 人
+                  div.class-recommend-item-footer.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+                    div.class-recommend-item-lecturer.g-flex-wrapper.g-flex-align-start
+                      div.class-recommend-item-lecturer-img
+                        img(src="assets/images/del/d-lecturer-02.jpg" alt="Pia")
+                      div.class-recommend-item-lecturer-info
+                        p.class-recommend-item-lecturer-name Pia
+                        p.class-recommend-item-lecturer-dept 稻町森法式甜點舖
+                    div.class-recommend-item-price NT$4,280
+        div.news-detail-extend
+          div.news-detail-extend-header.g-flex-wrapper.g-flex-align-end.g-flex-justify-space-between
+            h3.news-detail-extend-subject 延伸學習
+            div.news-detail-extend-option.g-flex-wrapper.g-flex-align-center.g-flex-justify-end
+              a(href="news_list.html" title="查看更多") 查看更多
+              button.news-detail-extend-arrow.prev 往前
+              button.news-detail-extend-arrow.next 往後
+          div.news-detail-extend-list-wrapper
+            ul.news-detail-extend-list
+              li.news-detail-extend-item
+                div.news-detail-extend-item-img
+                  img(src="assets/images/del/d-news-detail-extend-01.jpg" alt="")
+                h3.news-detail-extend-item-title 揭開法式餐廳工作的大小事 feat.安吉阿魯的小甜甜
+                p.news-detail-extend-item-desc 負責的部分是每一季的新菜單規劃及試做，也會有不定時活動或節慶的菜單需要研發~新菜單的測試方式大概是主廚跟我們說這次菜單的概念及想要用甚麼食材料理，再讓甜點部的人員試著做出來，這過程中會不斷與主廚討論與試吃。通常開始到完成的時間不一定，短至3天，長至1個月都有可能，也有主廚試吃完之後說「也許這不是個好主意」的事情發生過。
+                a.news-detail-extend-item-more(href="" title="") 閱讀更多
+              li.news-detail-extend-item
+                div.news-detail-extend-item-img
+                  img(src="assets/images/del/d-news-detail-extend-02.jpg" alt="")
+                h3.news-detail-extend-item-title 樂沐陳嵐舒：大自然說的話，由廚師來表達
+                p.news-detail-extend-item-desc 「台灣料理與台灣味是不同的議題」，陳嵐舒說，台灣擁有許多不同省份、不同代表性的料理，什麼能真正代表台灣料理呢？以上都是。而如何定義一個文化的料理？她認為，該是Technique（技巧）、Terroir（風土）、 Taste（味道）三者達到完美的平衡。 至於台灣味，陳嵐舒引用法國主廚Michel Bras的話：「大自然說的話，由廚師來表達。」料理的精髓源自食物真味的追求，「用台灣這片土地，生產食材所做的菜，就是台灣味。」
+                a.news-detail-extend-item-more(href="" title="") 閱讀更多
+              li.news-detail-extend-item
+                div.news-detail-extend-item-img
+                  img(src="assets/images/del/d-news-detail-extend-03.jpg" alt="")
+                h3.news-detail-extend-item-title 大師作家們的訪談：做什麼就像什麼！你所投其工作的抉擇、熱忱、決心，以及成為現在的自己
+                p.news-detail-extend-item-desc 作家訪談不是短短幾小時的對談，有時計畫數月甚至數年的貼身採訪，作家們往往能放下一切戒備，自然而然地談論寫作習慣、方法、困惑甚至私人的感情生活。破除對於寫作的一些誤解和迷思，比如他們都不靠靈感、激情、酒精來寫作，而是勤勉且自律，認真嚴謹地看待自己的職業，反覆不斷地修改直到產出一部作品。就算志業不在成為作家，或其他工作領域的人們，都能在訪談當中看到相同的問題，與待解的答案。
+                a.news-detail-extend-item-more(href="" title="") 閱讀更多
+              li.news-detail-extend-item
+                div.news-detail-extend-item-img
+                  img(src="assets/images/del/d-news-detail-extend-01.jpg" alt="")
+                h3.news-detail-extend-item-title 揭開法式餐廳工作的大小事 feat.安吉阿魯的小甜甜
+                p.news-detail-extend-item-desc 負責的部分是每一季的新菜單規劃及試做，也會有不定時活動或節慶的菜單需要研發~新菜單的測試方式大概是主廚跟我們說這次菜單的概念及想要用甚麼食材料理，再讓甜點部的人員試著做出來，這過程中會不斷與主廚討論與試吃。通常開始到完成的時間不一定，短至3天，長至1個月都有可能，也有主廚試吃完之後說「也許這不是個好主意」的事情發生過。
+                a.news-detail-extend-item-more(href="" title="") 閱讀更多
+              li.news-detail-extend-item
+                div.news-detail-extend-item-img
+                  img(src="assets/images/del/d-news-detail-extend-02.jpg" alt="")
+                h3.news-detail-extend-item-title 樂沐陳嵐舒：大自然說的話，由廚師來表達
+                p.news-detail-extend-item-desc 「台灣料理與台灣味是不同的議題」，陳嵐舒說，台灣擁有許多不同省份、不同代表性的料理，什麼能真正代表台灣料理呢？以上都是。而如何定義一個文化的料理？她認為，該是Technique（技巧）、Terroir（風土）、 Taste（味道）三者達到完美的平衡。 至於台灣味，陳嵐舒引用法國主廚Michel Bras的話：「大自然說的話，由廚師來表達。」料理的精髓源自食物真味的追求，「用台灣這片土地，生產食材所做的菜，就是台灣味。」
+                a.news-detail-extend-item-more(href="" title="") 閱讀更多
+              li.news-detail-extend-item
+                div.news-detail-extend-item-img
+                  img(src="assets/images/del/d-news-detail-extend-03.jpg" alt="")
+                h3.news-detail-extend-item-title 大師作家們的訪談：做什麼就像什麼！你所投其工作的抉擇、熱忱、決心，以及成為現在的自己
+                p.news-detail-extend-item-desc 作家訪談不是短短幾小時的對談，有時計畫數月甚至數年的貼身採訪，作家們往往能放下一切戒備，自然而然地談論寫作習慣、方法、困惑甚至私人的感情生活。破除對於寫作的一些誤解和迷思，比如他們都不靠靈感、激情、酒精來寫作，而是勤勉且自律，認真嚴謹地看待自己的職業，反覆不斷地修改直到產出一部作品。就算志業不在成為作家，或其他工作領域的人們，都能在訪談當中看到相同的問題，與待解的答案。
+                a.news-detail-extend-item-more(href="" title="") 閱讀更多
+              li.news-detail-extend-item
+                div.news-detail-extend-item-img
+                  img(src="assets/images/del/d-news-detail-extend-01.jpg" alt="")
+                h3.news-detail-extend-item-title 揭開法式餐廳工作的大小事 feat.安吉阿魯的小甜甜
+                p.news-detail-extend-item-desc 負責的部分是每一季的新菜單規劃及試做，也會有不定時活動或節慶的菜單需要研發~新菜單的測試方式大概是主廚跟我們說這次菜單的概念及想要用甚麼食材料理，再讓甜點部的人員試著做出來，這過程中會不斷與主廚討論與試吃。通常開始到完成的時間不一定，短至3天，長至1個月都有可能，也有主廚試吃完之後說「也許這不是個好主意」的事情發生過。
+                a.news-detail-extend-item-more(href="" title="") 閱讀更多
+              li.news-detail-extend-item
+                div.news-detail-extend-item-img
+                  img(src="assets/images/del/d-news-detail-extend-02.jpg" alt="")
+                h3.news-detail-extend-item-title 樂沐陳嵐舒：大自然說的話，由廚師來表達
+                p.news-detail-extend-item-desc 「台灣料理與台灣味是不同的議題」，陳嵐舒說，台灣擁有許多不同省份、不同代表性的料理，什麼能真正代表台灣料理呢？以上都是。而如何定義一個文化的料理？她認為，該是Technique（技巧）、Terroir（風土）、 Taste（味道）三者達到完美的平衡。 至於台灣味，陳嵐舒引用法國主廚Michel Bras的話：「大自然說的話，由廚師來表達。」料理的精髓源自食物真味的追求，「用台灣這片土地，生產食材所做的菜，就是台灣味。」
+                a.news-detail-extend-item-more(href="" title="") 閱讀更多
       include footer.pug
     include script.pug
+    script(src="assets/js/flickity.pkgd.min.js")
+    script(src="assets/js/class.js")

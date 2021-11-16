@@ -301,3 +301,727 @@
           background: $color-theme
 
 // class
+.class-detail-content
+  padding: 0 310px
+  @include betweenRWD(1280px, 1680px)
+    padding: 0 180px
+  @include betweenRWD(1024px, 1279px)
+    padding: 0 60px
+  @include maxRWD(1023px)
+    padding: 0
+  .class-detail-content-header
+    background: $color-white
+    .class-detail-content-video
+      position: relative
+      width: calc(100% - 450px)
+      background: $color-black-0
+      overflow: hidden
+      @include maxRWD(1023px)
+        width: 100%
+        padding-bottom: 56.25%
+      iframe
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+    .class-detail-content-info
+      width: 450px
+      padding: 20px 50px 20px 25px
+      @include maxRWD(1023px)
+        width: 100%
+        padding: 20px 30px
+      .class-detail-content-title
+        font-size: 1.5rem
+        font-weight: bold
+        margin: 0 0 20px
+      .class-detail-content-price
+        .tag
+          line-height: 30px
+          font-size: 1rem
+          color: $color-white
+          padding: 0 15px
+          margin-right: 10px
+        .price
+          font-size: 1.875rem
+          font-family: Georgia, 'Times New Roman', Times, serif
+          color: $color-theme
+      .class-detail-content-ranking
+        margin: 10px 0 12px
+        span
+          line-height: 20px
+          font-size: 0.875rem
+          color: $color-gray-0
+        .class-detail-content-ranking-stars
+          width: 90px
+          height: 16px
+          background-image: url(../images/g-ranking-stars.png)
+          background-size: 180px 16px
+          background-repeat: no-repeat
+          margin: 0 4px
+          &[data-stars^="5"]
+            background-position: 0 0
+          &[data-stars^="4"]
+            background-position: -18px 0
+          &[data-stars^="3"]
+            background-position: -36px 0
+          &[data-stars^="2"]
+            background-position: -54px 0
+          &[data-stars^="1"]
+            background-position: -72px 0
+          &[data-stars^="0"]
+            background-position: -90px 0
+      .class-detail-content-desc
+        font-size: 1rem
+        color: $color-gray-0
+        margin: 8px 0 0
+      .class-detail-content-lecturer
+        margin-top: 25px
+        .class-detail-content-lecturer-img
+          position: relative
+          margin-right: 20px
+          &::before
+            content: ''
+            display: block
+            position: absolute
+            width: 38px
+            height: 38px
+            border: 1px solid rgba($color-black-0, 0.25)
+            border-radius: 100%
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            transition: width 0.5s, height 0.5s
+          img
+            position: relative
+            z-index: 2
+            display: block
+            width: 40px
+            height: 40px
+            border-radius: 100%
+        .class-detail-content-lecturer-info
+          max-width: 200px
+          .class-detail-content-lecturer-name
+            font-size: 1rem
+            color: $color-black-1
+            margin: 0
+          .class-detail-content-lecturer-dept
+            font-size: 1rem
+            color: $color-gray-0
+            margin: 0
+      .class-detail-content-option
+        margin-top: 30px
+        > a
+          display: block
+          line-height: 36px
+          font-size: 1.25rem
+          color: $color-theme
+          border: 1px solid $color-theme
+          text-align: center
+          letter-spacing: 6px
+          padding-left: 6px
+          transition: all 0.3s
+          &:hover
+            border-color: $color-black-0
+            color: $color-black-0
+          &.buy
+            color: $color-white
+            background: $color-theme
+            &:hover
+              border-color: rgba($color-theme, 0.7)
+              background: rgba($color-theme, 0.7)
+          &+ a
+            margin-top: 12px
+  .class-detail-content-section
+    position: relative
+    margin-top: 30px
+    padding-top: 46px
+    @include maxRWD(1023px)
+      margin-top: 0
+    .class-detail-content-section-header
+      position: absolute
+      width: 100%
+      height: 46px
+      top: 0
+      left: 0
+      .class-detail-content-section-tab
+        width: 75%
+        background: $color-gray-2
+        padding: 0 60px
+        @include maxRWD(1023px)
+          width: 100%
+        .class-detail-content-section-tab-item
+          width: 25%
+          line-height: 46px
+          font-size: 1.25rem
+          color: $color-white
+          text-align: center
+          cursor: pointer
+          &.active
+            font-weight: bold
+          &:hover
+            background: $color-gray-0
+      .class-detail-content-section-buy
+        display: block
+        width: 25%
+        line-height: 46px
+        font-size: 1.25rem
+        color: $color-white
+        background: $color-theme
+        text-align: center
+        transition: background 0.3s, opacity 0.3s, transform 0s
+        &:hover
+          background: rgba($color-theme, 0.7)
+        @include maxRWD(1023px)
+          position: fixed
+          width: 100%
+          left: 0
+          bottom: 0
+      &.scroll-view
+        position: fixed
+        z-index: 20
+        top: 92px
+        @include maxRWD(1023px)
+          top: 68px
+      @include maxRWD(1023px)
+        &:not(.scroll-view)
+          .class-detail-content-section-buy
+            opacity: 0
+            transform: scale(0)
+            transition: background 0.3s, opacity 0.3s, transform 0s 0.3s
+  .class-detail-content-section-tabpane
+    background: $color-gray-e
+  .class-detail-content-lesson
+    padding: 20px 40px
+    .class-detail-content-lesson-header
+      background: $color-white
+      padding: 40px 25px 10px
+      .class-detail-content-lesson-header-item
+        min-width: 140px
+        border: 1px solid $color-theme
+        text-align: center
+        margin: 0 15px 30px
+        .class-detail-content-lesson-header-item-title
+          font-size: 1.25rem
+          color: $color-white
+          background: $color-theme
+          padding: 4px 15px
+        .class-detail-content-lesson-header-item-content
+          font-size: 1.625rem
+          padding: 10px 15px
+    .class-detail-content-lesson-content
+      background: $color-white
+      margin-top: 15px
+      padding: 40px 55px
+      .class-detail-content-lesson-content-subject
+        font-size: 1.625rem
+        margin: 0 0 25px
+      .class-detail-content-lesson-content-list
+        margin-bottom: 45px
+        li
+          font-size: 1rem
+          border-bottom: 1px solid $color-gray-e
+          padding: 10px 0
+  .class-detail-content-fbcomment-wrapper
+    padding: 20px 40px
+    .class-detail-content-fbcomment
+      background: $color-white
+      padding: 30px 60px
+  .class-detail-content-discuss-wrapper
+    padding: 20px 40px
+    .class-detail-content-discuss
+      background: $color-white
+      padding: 80px 160px 100px
+      text-align: center
+      .class-detail-content-discuss-title
+        font-size: 1.625rem
+        margin: 0 0 25px
+      .class-detail-content-discuss-desc
+        font-size: 1rem
+        margin: 0 0 60px
+        > a
+          color: #00479d
+          margin: 0 8px
+          text-decoration: underline
+          &:hover
+            text-decoration: none
+      .class-detail-content-discuss-option
+        > a
+          display: block
+          width: calc(50% - 16px)
+          max-width: 225px
+          height: 40px
+          line-height: 40px
+          font-size: 1.25rem
+          color: $color-white
+          letter-spacing: 6px
+          padding-left: 6px
+          margin: 0 8px 20px
+          transition: all 0.3s
+          &.login
+            background: $color-black-4
+            &:hover
+              background: rgba($color-black-4, 0.7)
+          &.buy
+            background: $color-theme
+            &:hover
+              background: rgba($color-theme, 0.7)
+.class-recommend
+  position: relative
+  margin-top: 90px
+  padding: 45px 150px 0
+  @include betweenRWD(1280px, 1680px)
+    padding: 40px 60px 0
+  @include betweenRWD(1024px, 1279px)
+    margin-top: 60px
+    padding: 30px 30px 0
+  @include maxRWD(1023px)
+    margin-top: 40px
+    padding: 20px 15px 0
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    width: calc(100% - 200px)
+    height: 1px
+    background: $color-gray-e
+    top: 0
+    left: 100px
+  .class-recommend-header
+    .class-recommend-subject
+      width: 265px
+      line-height: 42px
+      font-size: 2.25rem
+      color: rgba($color-white, 0)
+      background-image: url(../images/detail-recommend-subject.png)
+      background-size: contain
+      background-position: left center
+      background-repeat: no-repeat
+      letter-spacing: 8px
+      text-align: center
+      margin: 0
+      @include maxRWD(1023px)
+        width: 176px
+        line-height: 28px
+        font-size: 1.5rem
+        letter-spacing: 4px
+    .class-recommend-option
+      padding: 0 30px
+      @include maxRWD(1023px)
+        display: none
+      > a
+        font-size: 0.875rem
+        color: $color-gray-0
+        text-decoration: underline
+        &:hover
+          color: $color-black-1
+          text-decoration: none
+          transition: all 0.3s
+      button.class-recommend-arrow
+        display: block
+        position: relative
+        width: 30px
+        height: 30px
+        font-size: 0
+        border: none
+        background: $color-button-arrow-bg
+        border-radius: 100%
+        margin-left: 10px
+        cursor: pointer
+        transition: background .3s
+        &::before
+          content: ''
+          display: block
+          position: absolute
+          width: 8px
+          height: 8px
+          top: 50%
+          margin-top: -4px
+          border-color: $color-button-arrow-tip
+          border-style: solid
+          transform: rotate(45deg)
+          transition: border .3s
+        &.prev
+          &::before
+            border-left-width: 2px
+            border-bottom-width: 2px
+            border-top-width: 0px
+            border-right-width: 0px
+            left: 50%
+            margin-left: -3px
+        &.next
+          &::before
+            border-top-width: 2px
+            border-right-width: 2px
+            border-left-width: 0px
+            border-bottom-width: 0px
+            right: 50%
+            margin-right: -3px
+        &:hover
+          background: $color-button-arrow-bg-active
+          &::before
+            border-color: $color-button-arrow-tip-active
+        &:disabled
+          background: $color-button-arrow-bg-disabled
+          cursor: not-allowed
+          &::before
+            border-color: $color-button-arrow-tip-disabled
+  .class-recommend-list-wrapper
+    overflow: hidden
+    .class-recommend-list
+      position: relative
+      margin-top: 30px
+      @include minRWD(1024px)
+        &::after
+          content: 'flickity'
+          display: none
+      @include maxRWD(1023px)
+        margin-top: 15px
+    .class-recommend-item
+      width: 33.333%
+      margin-bottom: 70px
+      @include betweenRWD(1024px, 1439px)
+        width: 50%
+        margin-bottom: 30px
+      @include maxRWD(1023px)
+        width: 100%
+        margin-bottom: 0
+        &:nth-child(n+4)
+          display: none
+      > a
+        display: block
+        position: relative
+        padding: 30px
+        transition: background 0.5s
+        @include maxRWD(1023px)
+          padding: 15px
+        .class-recommend-item-tag
+          display: block
+          position: absolute
+          z-index: 2
+          font-size: 1.125rem
+          color: $color-white
+          padding: 6px 20px
+          top: 20px
+          right: 40px
+          @include maxRWD(1023px)
+            top: 0
+            right: 30px
+        .class-recommend-item-img
+          img
+            display: block
+            width: 100%
+        .class-recommend-item-title
+          font-size: 1.5rem
+          color: $color-black-0
+          margin: 15px 0 0
+          white-space: nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+          @include maxRWD(1023px)
+            white-space: inherit
+        .class-recommend-item-ranking
+          margin-top: 10px
+          span
+            line-height: 20px
+            font-size: 0.875rem
+            color: $color-gray-0
+          .class-recommend-item-ranking-stars
+            width: 90px
+            height: 16px
+            background-image: url(../images/g-ranking-stars.png)
+            background-size: 180px 16px
+            background-repeat: no-repeat
+            margin: 0 4px
+            &[data-stars^="5"]
+              background-position: 0 0
+            &[data-stars^="4"]
+              background-position: -18px 0
+            &[data-stars^="3"]
+              background-position: -36px 0
+            &[data-stars^="2"]
+              background-position: -54px 0
+            &[data-stars^="1"]
+              background-position: -72px 0
+            &[data-stars^="0"]
+              background-position: -90px 0
+        .class-recommend-item-info
+          font-size: 1rem
+          color: $color-gray-0
+          margin: 12px 0 0
+        .class-recommend-item-footer
+          margin-top: 20px
+          .class-recommend-item-lecturer
+            padding-bottom: 0.5rem
+            .class-recommend-item-lecturer-img
+              position: relative
+              margin-right: 20px
+              &::before
+                content: ''
+                display: block
+                position: absolute
+                width: 38px
+                height: 38px
+                border: 1px solid rgba($color-black-0, 0.25)
+                border-radius: 100%
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                transition: width 0.5s, height 0.5s
+              img
+                position: relative
+                z-index: 2
+                display: block
+                width: 40px
+                height: 40px
+                border-radius: 100%
+            .class-recommend-item-lecturer-info
+              max-width: 200px
+              .class-recommend-item-lecturer-name
+                font-size: 1rem
+                color: $color-black-1
+                margin: 0
+              .class-recommend-item-lecturer-dept
+                font-size: 1rem
+                color: $color-gray-0
+                margin: 0
+          .class-recommend-item-price
+            font-size: 1.875rem
+            font-family: Georgia, 'Times New Roman', Times, serif
+            color: $color-theme
+        &:hover
+          background: $color-white
+          .class-recommend-item-footer
+            .class-recommend-item-lecturer
+              .class-recommend-item-lecturer-img
+                &::before
+                  width: 46px
+                  height: 46px
+
+// purchase
+.class-purchase-inner
+  padding: 60px 220px 120px
+  @include betweenRWD(1280px, 1680px)
+    padding: 60px 120px 80px
+  @include betweenRWD(1024px, 1279px)
+    padding: 40px 60px 60px
+  @include maxRWD(1023px)
+    padding: 20px 15px 40px
+  .class-purchase-subject
+    width: 185px
+    line-height: 42px
+    font-size: 2.25rem
+    color: rgba($color-white, 0)
+    background-image: url(../images/class-purchase-subject.png)
+    background-size: contain
+    background-position: left center
+    background-repeat: no-repeat
+    letter-spacing: 10px
+    text-align: center
+    margin: 0 0 30px
+    @include maxRWD(1023px)
+      width: 125px
+      line-height: 28px
+      font-size: 1.5rem
+      letter-spacing: 4px
+  .class-purchase-form
+    margin: 0 -30px
+    @include betweenRWD(1024px, 1279px)
+      margin: 0 -15px
+    @include maxRWD(1023px)
+      margin: 0
+    .class-purchase-form-left
+      width: 66.666%
+      padding: 0 30px
+      @include betweenRWD(1024px, 1279px)
+        padding: 0 15px
+      @include maxRWD(1023px)
+        width: 100%
+        padding: 0
+    .class-purchase-form-right
+      width: 33.333%
+      padding: 0 30px
+      @include betweenRWD(1024px, 1279px)
+        padding: 0 15px
+      @include maxRWD(1023px)
+        width: 100%
+        padding: 0
+    .class-purchase-form-block
+      &+ .class-purchase-form-block
+        margin-top: 40px
+    .class-purchase-form-title
+      font-size: 1.5rem
+      color: $color-black-0
+      margin: 0 0 10px
+    .class-purchase-form-info
+      line-height: 30px
+      font-size: 1rem
+      color: $color-gray-a
+      margin: 0
+    .class-purchase-form-method-wrapper,
+    .class-purchase-form-flex
+      margin: 0 -15px
+      @include maxRWD(1023px)
+        margin: 0
+      #class-purchase-form-method-select
+        display: block
+        width: calc(50% - 30px)
+        height: 42px
+        font-size: 1rem
+        color: $color-black-0
+        border: 1px solid $color-gray-e
+        margin: 0 15px
+        padding: 0 24px
+        transition: border 0.3s
+        &:focus
+          border-color: $color-theme
+        @include maxRWD(1023px)
+          width: 100%
+          margin: 0
+      .class-purchase-form-method-desc
+        width: calc(50% - 30px)
+        margin: 0 15px
+        padding: 6px 0
+        @include maxRWD(1023px)
+          width: 100%
+          margin: 10px 0 0
+      .class-purchase-form-checkline
+        width: calc(100% - 30px)
+        margin: 0 15px 30px
+        @include maxRWD(1023px)
+          width: 100%
+          margin: 0 0 20px
+        > label
+          margin: 0
+          input
+            width: 16px
+            height: 16px
+            margin-top: 0
+            margin-right: 6px
+      .class-purchase-form-group
+        width: calc(50% - 30px)
+        margin: 0 15px 30px
+        @include maxRWD(1023px)
+          width: 100%
+          margin: 0 0 20px
+        .class-purchase-form-group-title
+          position: relative
+          font-size: 1rem
+          margin: 0 0 8px
+          i
+            font-style: normal
+            color: #e60012
+          span.far
+            position: absolute
+            bottom: 0
+            right: 0
+            color: $color-gray-b
+            cursor: pointer
+        .class-purchase-form-group-input
+          display: block
+          width: 100%
+          height: 42px
+          font-size: 1rem
+          color: $color-black-0
+          border: 1px solid $color-gray-e
+          padding: 0 24px
+          transition: border 0.3s
+          &::placeholder
+            color: $color-gray-a
+          &:focus
+            border-color: $color-theme
+    .class-intro
+      .class-intro-img
+        img
+          display: block
+          width: 100%
+      .class-intro-title
+        font-size: 1.5rem
+        color: $color-black-0
+        margin: 15px 0 0
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+        @include maxRWD(1023px)
+          white-space: inherit
+      .class-intro-ranking
+        margin-top: 10px
+        span
+          line-height: 20px
+          font-size: 0.875rem
+          color: $color-gray-0
+        .class-intro-ranking-stars
+          width: 90px
+          height: 16px
+          background-image: url(../images/g-ranking-stars.png)
+          background-size: 180px 16px
+          background-repeat: no-repeat
+          margin: 0 4px
+          &[data-stars^="5"]
+            background-position: 0 0
+          &[data-stars^="4"]
+            background-position: -18px 0
+          &[data-stars^="3"]
+            background-position: -36px 0
+          &[data-stars^="2"]
+            background-position: -54px 0
+          &[data-stars^="1"]
+            background-position: -72px 0
+          &[data-stars^="0"]
+            background-position: -90px 0
+      .class-intro-info
+        font-size: 1rem
+        color: $color-gray-0
+        margin: 12px 0 0
+    .class-purchase-coupon
+      margin-top: 30px
+      .class-purchase-coupon-title
+        font-size: 1rem
+        margin: 0 0 8px
+      .class-purchase-coupon-group
+        width: 100%
+      .class-purchase-coupon-input
+        width: calc(100% - 120px)
+        height: 42px
+        font-size: 1rem
+        color: $color-black-0
+        border: 1px solid $color-gray-e
+        padding: 0 24px
+        transition: border 0.3s
+        &::placeholder
+          color: $color-gray-a
+        &:focus
+          border-color: $color-theme
+      .class-purchase-coupon-button
+        width: 105px
+        height: 42px
+        font-size: 1rem
+        color: $color-white
+        border: none
+        background: $color-black-3
+        margin-left: 15px
+        transition: all 0.3s
+        &:hover
+          background: rgba($color-black-3, 0.7)
+    .class-purchase-price
+      font-size: 1.5rem
+      margin: 20px 0 0
+      span
+        font-size: 1.875rem
+        font-family: Georgia, 'Times New Roman', Times, serif
+        color: $color-theme
+        margin-left: 20px
+    .class-purchase-submit
+      display: block
+      width: 100%
+      height: 42px
+      font-size: 1.25rem
+      color: $color-white
+      border: none
+      background: $color-theme
+      letter-spacing: 6px
+      margin-top: 30px
+      padding-left: 6px
+      transition: all 0.3s
+      &:hover
+        background: rgba($color-theme, 0.7)

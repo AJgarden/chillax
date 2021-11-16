@@ -1,0 +1,103 @@
+doctype html
+html
+  head
+    title chillax
+    include meta.pug
+  body
+    div.g-page-wrapper
+      include header_logged.pug
+      div.class-purchase-inner
+        h2.class-purchase-subject 購買課程
+        form#class-purchase-form.class-purchase-form.g-flex-wrapper.g-flex-align-start
+          div.class-purchase-form-left
+            div.class-purchase-form-block
+              p.class-purchase-form-title 付款方式
+              div.class-purchase-form-method-wrapper.g-flex-wrapper.g-flex-align-start
+                select#class-purchase-form-method-select
+                  option(value='cred') 信用卡
+                div.class-purchase-form-method-desc
+                  div.class-purchase-form-method-desc-item(data-value='cred')
+                    <!-- {編輯器開始} -->
+                    img(src='assets/images/del/d-purchase-credit-visa.jpg' alt='')
+                    img(src='assets/images/del/d-purchase-credit-master.jpg' alt='')
+                    img(src='assets/images/del/d-purchase-credit-jcb.jpg' alt='')
+                    <!-- {編輯器結束} -->
+            div.class-purchase-form-block
+              p.class-purchase-form-title 付款資料
+              div.class-purchase-form-flex.g-flex-wrapper.g-flex-align-start
+                div.class-purchase-form-group
+                  p.class-purchase-form-group-title
+                    | 持卡人姓名
+                    i （必填）
+                  input.class-purchase-form-group-input(placeholder='與信用卡上名稱相同')
+                div.class-purchase-form-group
+                  p.class-purchase-form-group-title
+                    | 信用卡號碼
+                    i （必填）
+                  input.class-purchase-form-group-input(placeholder='**** **** **** ****')
+                div.class-purchase-form-group
+                  p.class-purchase-form-group-title
+                    | 有效日期
+                    i （必填）
+                  input.class-purchase-form-group-input(placeholder='MM/YY')
+                div.class-purchase-form-group
+                  p.class-purchase-form-group-title
+                    | 安全碼CVC
+                    i （必填）
+                    span.far.fa-question-circle(data-toggle='tooltip' data-placement='top' title='安全碼說明放這裡')
+                  input.class-purchase-form-group-input(placeholder='後三碼')
+              p.class-purchase-form-info 本公司採用喬睿科技TapPay SSL交易傳輸系統，該系統通過PCI-DSS國際信用卡組織VISA、MasterCard等產業資料安全Level 1等級，完善保護您的付款傳輸資料。本公司不會留下您的信用卡資料，以保障你的權益。
+            div.class-purchase-form-block
+              p.class-purchase-form-title 聯絡方式
+              div.class-purchase-form-flex.g-flex-wrapper.g-flex-align-start
+                div.class-purchase-form-group
+                  p.class-purchase-form-group-title
+                    | 姓名
+                    i （必填）
+                  input.class-purchase-form-group-input(placeholder='請填入真實姓名')
+                div.class-purchase-form-group
+                  p.class-purchase-form-group-title
+                    | 常用連絡信箱
+                    i （必填）
+                  input.class-purchase-form-group-input(placeholder='請填入電子信箱')
+                div.class-purchase-form-group
+                  p.class-purchase-form-group-title
+                    | 聯絡電話
+                    i （必填）
+                  input.class-purchase-form-group-input(placeholder='請填入手機號碼')
+                div.class-purchase-form-checkline
+                  label.g-flex-inline-wrapper.g-flex-align-center
+                    input(type='checkbox' name='invoice' value='yes')
+                    span 索取公司統編發票
+                div.class-purchase-form-group(data-addition='invoice' style='display: none;')
+                  p.class-purchase-form-group-title
+                    | 公司抬頭
+                    i （必填）
+                  input.class-purchase-form-group-input(placeholder='請填入公司抬頭')
+                div.class-purchase-form-group(data-addition='invoice' style='display: none;')
+                  p.class-purchase-form-group-title
+                    | 統一編號
+                    i （必填）
+                  input.class-purchase-form-group-input(placeholder='請填入公司統一編號')
+          div.class-purchase-form-right
+            div.class-intro
+              div.class-intro-img
+                img(src="assets/images/del/d-class-list-02.jpg" alt="")
+              h3.class-intro-title 巧克力甜點大全 | 大師帶您進入味蕾世界
+              div.class-intro-ranking.g-flex-wrapper.g-flex-align-center
+                span 5.0
+                div.class-intro-ranking-stars(data-stars="5")
+                span (3)
+              p.class-intro-info 課程時間 480 分鐘 | 上課人數 2150 人
+            div.class-purchase-coupon
+              p.class-purchase-coupon-title 優惠碼
+              div.class-purchase-coupon-group.g-flex-inline-wrapper.g-flex-align-center
+                input.class-purchase-coupon-input(placeholder='請填入優惠代碼')
+                button.class-purchase-coupon-button 確認
+            p.class-purchase-price
+              | 金額
+              span NT$4,980
+            button.class-purchase-submit(type='submit') 確認購買
+      include footer.pug
+    include script.pug
+    script(src="assets/js/purchase.js")

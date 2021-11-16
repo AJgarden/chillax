@@ -1,0 +1,26 @@
+header.header
+  div.header-wrapper.g-flex-wrapper.g-flex-align-center.g-flex-justify-space-between
+    h1.header-logo
+      a(href='/' title='chillax')
+        img(src='assets/images/header-logo.png' alt='chillax')
+    nav.header-nav.g-flex-wrapper.g-flex-align-center
+      a.header-nav-item.g-flex-wrapper.g-flex-align-center(href='' title='線上課程')
+        span.header-nav-item-icon
+          img(src='assets/images/header-icon-lesson.png' alt='')
+        span.header-nav-item-text 線上課程
+      a.header-nav-item.g-flex-wrapper.g-flex-align-center(href='' title='我的課程')
+        span.header-nav-item-icon
+          img(src='assets/images/header-icon-member.png' alt='')
+        span.header-nav-item-text 我的課程
+      div.dropdown
+        button.btn.btn-default.dropdown-toggle(type='button' id='account-login' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true')
+          img(src='assets/images/del/d-account-image.jpg' alt='')
+          span.caret
+        ul.dropdown-menu.dropdown-menu-right(aria-labelledby='account-login')
+          li.active
+            a(href='#' title='帳號設定') 帳號設定
+          li
+            a(href='#' title='我的課程') 我的課程
+          li
+            a(href='#' title='登出') 登出
+  div.header-scroll-dispatcher

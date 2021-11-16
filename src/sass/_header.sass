@@ -72,6 +72,41 @@
           &::after
             height: 4px
             opacity: 1
+  .dropdown
+    .btn
+      min-width: 70px
+      border: none
+      background: transparent !important
+      padding: 0 28px 0 0
+      img
+        display: block
+        width: 42px
+        height: 42px
+        border-radius: 100%
+      .caret
+        right: 2px
+    .dropdown-menu
+      border: none
+      box-shadow: none
+      margin-top: 75px
+      padding: 25px 30px
+      @include betweenRWD(1281px, 1680px)
+        margin-top: 63px
+      @include betweenRWD(1024px, 1280px)
+        margin-top: 59px
+      > li
+        text-align: center
+        > a
+          font-size: 0.9375rem
+          padding: 8px 20px
+          transition: all 0.3s
+          &:hover
+            color: $color-theme
+            background: $color-white
+        &.active
+          > a
+            color: $color-theme
+            background: $color-white
   @include minRWD(1024px)
     &.header-scroll-start-animation
       animation: headerScrollStart 1s forwards ease-out
@@ -90,12 +125,26 @@
         a,
         img
           width: 120px
+      .dropdown
+        .dropdown-menu
+          margin-top: 25px
     &.header-at-end
       opacity: 0
       transform: translateY(-100%)
       transition: opacity 0s 1s, transform 0s 1s
   @include maxRWD(1023px)
     position: fixed
+    .dropdown
+      margin-left: 10px
+      .btn
+        min-width: 58px
+        padding-right: 18px
+        img
+          width: 40px
+          height: 40px
+      .dropdown-menu
+        margin-top: 13px
+
 
 // custom for index
 .page-index
